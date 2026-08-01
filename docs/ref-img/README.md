@@ -34,6 +34,8 @@ Use it to identify the visual properties that remain stable when the food change
 
 Do not use the buns, ingredients, utensils, or generated wording as references for the white bean dessert.
 
+For the future small-cinnamon-braids recipe, this image becomes a **primary recipe-adjacent art-direction reference** for yeast-pastry atmosphere and series styling. It still does not define the exact braid shape, quantities, or preparation method; those require the written recipe and an approved factual shaping reference.
+
 ## Reference Order for the Initial Pilot
 
 When both images are supplied to an image-generation request, identify them explicitly:

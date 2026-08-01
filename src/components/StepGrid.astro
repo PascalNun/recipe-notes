@@ -10,6 +10,7 @@ interface Props {
 		number: number;
 		title: string;
 		text: string;
+		sketch?: 'toast' | 'rinse' | 'chill' | 'mix' | 'bake' | 'espresso';
 		image?: ImageMetadata | 'fallback';
 		imageAlt?: string;
 		sequenceImages?: {
@@ -32,7 +33,7 @@ const { title, finishTitle, finish, steps, fallbackLabel } = Astro.props;
 		<h2 id="method-title">{title}</h2>
 		<span aria-hidden="true">♥</span>
 	</div>
-	<div class="step-grid">
+	<div class:list={['step-grid', `step-grid--${Math.min(steps.length, 7)}`]}>
 		{steps.map((step) => <StepCard step={step} fallbackLabel={fallbackLabel} />)}
 		{finish && (
 			<aside class="method-finish">

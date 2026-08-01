@@ -1,6 +1,6 @@
-# Contemporary Regional Kitchen
+# Recipe Notes
 
-A small bilingual recipe zine built as a static Astro website. The project translates the visual language of a handmade recipe poster into an editable, responsive web system: content lives in Markdown, images can be replaced independently, and new recipes do not require a CMS.
+A growing bilingual recipe collection built as a static Astro website. The project translates the visual language of a contemporary handmade food zine into an editable, responsive web system: content lives in Markdown, images can be replaced independently, and new recipes do not require a CMS.
 
 Live site: [recipes.pascalnun.eu](https://recipes.pascalnun.eu)
 
@@ -9,7 +9,8 @@ Live site: [recipes.pascalnun.eu](https://recipes.pascalnun.eu)
 Version 1 deliberately focuses on a durable foundation:
 
 - German and English landing pages and recipe detail pages
-- one complete example recipe in both languages
+- three complete illustrated recipes in both languages
+- lightweight title, ingredient, keyword, and tag filtering on the landing page
 - a validated Astro Content Collection
 - responsive poster, ingredient, step, and note layouts
 - visual fallbacks for recipe images that do not exist yet
@@ -17,7 +18,7 @@ Version 1 deliberately focuses on a durable foundation:
 
 ## Why Astro?
 
-Astro is a strong fit because the site is static, content-driven, and requires almost no browser JavaScript. A heavier React or CMS stack would add complexity without a clear benefit for this first version. The harder parts are the responsive poster composition, reliable links between translations, and consistent recipe assets. Search, a CMS, automatic translation, and an advanced image pipeline are therefore intentionally out of scope for now.
+Astro is a strong fit because the site is static, content-driven, and requires very little browser JavaScript. A small vanilla enhancement provides landing-page search and tag filtering; the recipe content, layout, navigation, and language routes remain fully static. A heavier React or CMS stack would add complexity without a clear benefit for this first version.
 
 ## Tech Stack
 
@@ -25,6 +26,7 @@ Astro is a strong fit because the site is static, content-driven, and requires a
 - strict TypeScript
 - Markdown and Astro Content Collections
 - modern custom CSS without a framework
+- small framework-free search and tag-filter enhancement
 - static output with no database or backend
 
 ## Project Structure
@@ -78,6 +80,8 @@ The production site is generated in `dist/`. It can be served by any standard st
 
 See [docs/content-model.md](docs/content-model.md) for all supported fields and examples.
 
+The landing page is a continuous recipe-book index rather than a simulated magazine issue. Its information hierarchy, filtering behaviour, and relationship to the more expressive recipe pages are documented in [docs/landing-page.md](docs/landing-page.md).
+
 ## German and English Content
 
 Each language version is a separate Markdown file. `recipeKey` connects translations; `lang` and `slug` determine the language and public URL. When a translation is missing, no broken page is generated and that language is disabled in the recipe language switcher. Interface terms such as “Ingredients” and “So geht’s” are stored separately under `src/i18n/`.
@@ -88,6 +92,10 @@ Recipe-specific images belong in `src/content/recipes/<recipe>/assets/`. `heroIm
 
 The authoritative visual rules live in [docs/asset-style-guide.md](docs/asset-style-guide.md). The recommended visual sequence is documented in [docs/visual-direction.md](docs/visual-direction.md), while [docs/recipe-production-pipeline.md](docs/recipe-production-pipeline.md) defines the repeatable path from a raw recipe to a bilingual illustrated page. The supplied art-direction images are catalogued in [docs/ref-img/README.md](docs/ref-img/README.md), and the reproducible prompts are recorded in [the first recipe pilot](docs/prompts/white-bean-cinnamon-cream-pilot.md) and [the global material texture note](docs/prompts/global-material-textures.md).
 
+The project-wide cultural position is defined in the [editorial charter](docs/editorial-charter.md): contemporary regional plant-based cooking, warm but never nostalgic, with regional ingredients treated as a starting point for open and internationally informed combinations.
+
+The completed production records for the additional recipes live in [the Hessian Kreppel brief](docs/prompts/hessian-kreppel-production.md) and [the small cinnamon braids brief](docs/prompts/small-cinnamon-braids-production.md). They preserve the factual locks, approved hero direction, supporting asset sources, and transparent WebP workflow for future recipe production.
+
 ## Design Principles
 
 - warm paper, marker-like colour fields, and handmade accents
@@ -95,19 +103,19 @@ The authoritative visual rules live in [docs/asset-style-guide.md](docs/asset-st
 - readability before decorative density
 - semantic HTML, visible focus states, and meaningful alternative text
 - CSS custom properties instead of scattered design values
-- no client JavaScript for layout or language switching
+- no client JavaScript for layout or language switching; search and tags use a small progressive enhancement
 
 See [docs/coding-principles.md](docs/coding-principles.md) for the engineering guidelines.
 
 ## GitHub and Deployment
 
-The repository is ready for an initial commit. A GitHub repository still needs to be created and connected as `origin`; no remote repository is configured yet. The production site is deployed independently at `recipes.pascalnun.eu`. See [docs/deployment.md](docs/deployment.md) for the exact GitHub and VPS workflow.
+The source is maintained in the private `PascalNun/recipe-notes` GitHub repository. The production site is deployed independently at `recipes.pascalnun.eu`. See [docs/deployment.md](docs/deployment.md) for the GitHub and VPS workflow.
 
 ## Intentionally Open in Version 1
 
-- artwork for future recipes beyond the completed white-bean pilot
+- artwork for future recipes beyond the three completed launch recipes
 - automated consistency checks between German and English recipes
-- search, filtering, and sorting for a larger collection
+- category architecture and sorting controls for a much larger collection
 - a more advanced responsive image production pipeline
 - an optional Git-based CMS and editorial preview
 
@@ -118,4 +126,4 @@ The repository is ready for an initial commit. A GitHub repository still needs t
 3. **Poster system** — hero, ingredients, steps, optional notes, and fallbacks.
 4. **Quality** — responsive behaviour, accessibility, type checking, and production build.
 5. **Asset production** — final images following the documented prompt workflow.
-6. **Collection growth** — more recipes, followed by search or a lightweight CMS only when needed.
+6. **Collection growth** — more recipes, with the existing search and tag index ready to expand; add a lightweight CMS only when needed.

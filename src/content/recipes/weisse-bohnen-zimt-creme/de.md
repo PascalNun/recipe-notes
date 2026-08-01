@@ -1,4 +1,5 @@
 ---
+order: 1
 recipeKey: white-bean-cinnamon-cream
 lang: de
 title: Weiße Bohnen-Zimt-Creme
@@ -27,8 +28,7 @@ introNote: Ein Dessert aus Zutaten, die in Mitteleuropa plausibel anbaubar sind 
 ingredientSections:
   - title: Für die Creme
     items:
-      - 1 Dose weiße Bohnen, ca. 240 g abgetropft
-      - einfache weiße Bohnen in Wasser oder Salzlake
+      - 1 Dose weiße Bohnen in Wasser oder Salzlake, ca. 240 g abgetropft
       - 150–200 g veganer Skyr oder Sojajoghurt
       - 2 EL Agavendicksaft
       - 2 EL Zucker
@@ -38,7 +38,7 @@ ingredientSections:
       - gute Prise Salz
       - 1–2 TL Limettensaft
       - optional etwas Pflanzenmilch zum Mixen
-  - title: "Für das Sonnenblumen-\u200bkernmus"
+  - title: Für das Sonnenblumenkernmus
     items:
       - 80–100 g Sonnenblumenkerne
       - optional 1 TL neutrales Öl
@@ -58,36 +58,42 @@ ingredientSections:
       - 1 kleiner Espresso
 steps:
   - number: 1
-    title: Sonnenblumenkerne rösten
+    title: Kerne rösten & Mus mixen
     text: Die Sonnenblumenkerne ohne Öl in der Pfanne oder im Ofen leicht rösten, bis sie warm, nussig und leicht karamellig riechen. Nicht zu dunkel werden lassen. Dann noch warm mixen, bis ein cremiges Mus entsteht. Falls nötig, minimal Öl ergänzen.
+    sketch: toast
     image: ./assets/step-01.webp
     imageAlt: Geröstete Sonnenblumenkerne in einer dunklen Pfanne neben einem Mixer mit cremigem Sonnenblumenkernmus
   - number: 2
     title: Bohnen vorbereiten
     text: Die Bohnen sehr gründlich abspülen und kurz abtropfen lassen. Optional einmal mit heißem Wasser übergießen.
+    sketch: rinse
     image: ./assets/step-02.webp
     imageAlt: Abgespülte weiße Bohnen in einem Edelstahl-Sieb mit abtropfendem Wasser
     note: Dadurch werden sie neutraler, cremiger und weniger bohnig.
   - number: 3
     title: Creme zubereiten
     text: Zuerst Bohnen, Sonnenblumenkernmus und wenig Pflanzenmilch mixen, bis die Masse möglichst glatt wird. Dann veganen Skyr oder Joghurt, Agave, Zucker, Stevia, Vanille, Zimt, Salz und Limettensaft hinzufügen. Alles nochmal sehr fein mixen.
+    sketch: chill
     image: ./assets/step-03.webp
     imageAlt: Standmixer mit glatter heller Bohnen-Zimt-Creme
     note: 20–30 Minuten kaltstellen. Die Creme wird dabei noch etwas fester.
   - number: 4
     title: Hafer-Crunch vorbereiten
     text: Alle Zutaten vermischen. Die Masse sollte leicht feucht und leicht krümelig sein.
+    sketch: mix
     image: ./assets/step-04.webp
     imageAlt: Schale mit feuchter Hafer-Crunch-Mischung und einem Löffel
   - number: 5
     title: Crunch backen
     text: Auf Backpapier eher flach und unregelmäßig verteilen. Bei 175 °C Ober-/Unterhitze ca. 18–25 Minuten backen. Zwischendurch einmal wenden und etwas auflockern.
+    sketch: bake
     image: ./assets/step-05.webp
     imageAlt: Goldbrauner Hafer-Crunch auf einem dunklen Backblech neben einem kleinen Ofen
     note: Danach vollständig auskühlen lassen.
   - number: 6
     title: Espresso-Finish
     text: Den Crunch leicht mit Espresso beträufeln.
+    sketch: espresso
     image: ./assets/step-06.webp
     imageAlt: Espresso tropft von einem Löffel auf Hafer-Crunch in einer Schale
     note: Nicht einweichen – nur leicht aromatisieren.

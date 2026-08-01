@@ -14,7 +14,9 @@ interface Props {
 }
 
 const { lang } = Astro.props;
-const recipes = (await getCollection('recipes')).filter((recipe) => recipe.data.lang === lang);
+const recipes = (await getCollection('recipes'))
+	.filter((recipe) => recipe.data.lang === lang && !recipe.data.draft)
+	.sort((first, second) => first.data.order - second.data.order);
 const languageLinks = supportedLanguages.map((linkLang) => ({ lang: linkLang, href: `/${linkLang}/` }));
 ---
 

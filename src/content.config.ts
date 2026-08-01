@@ -10,6 +10,8 @@ const ingredientSection = z.object({
 const recipes = defineCollection({
 	loader: glob({ pattern: '**/*.md', base: './src/content/recipes' }),
 	schema: ({ image }) => z.object({
+		draft: z.boolean().default(false),
+		order: z.number().int().nonnegative().default(0),
 		recipeKey: z.string(),
 		lang: z.enum(['de', 'en']),
 		title: z.string(),
@@ -18,6 +20,12 @@ const recipes = defineCollection({
 		slug: z.string(),
 		description: z.string(),
 		tags: z.array(z.string()).min(1),
+		yieldText: z.string().optional(),
+		timeItems: z.array(z.object({
+			label: z.string(),
+			value: z.string(),
+		})).min(1).optional(),
+		timeNote: z.string().optional(),
 		heroImage: z.union([image(), z.literal('fallback')]),
 		heroAlt: z.string(),
 		ingredientSpotImage: image().optional(),
@@ -33,6 +41,7 @@ const recipes = defineCollection({
 			number: z.number().int().positive(),
 			title: z.string(),
 			text: z.string(),
+			sketch: z.enum(['toast', 'rinse', 'chill', 'mix', 'bake', 'espresso']).optional(),
 			image: z.union([image(), z.literal('fallback')]).optional(),
 			imageAlt: z.string().optional(),
 			sequenceImages: z.object({

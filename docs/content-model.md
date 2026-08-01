@@ -19,6 +19,8 @@ src/content/recipes/white-bean-cinnamon-cream/
 
 | Field | Type | Purpose |
 | --- | --- | --- |
+| `draft` | boolean, optional | excludes an incomplete recipe from index pages, routes, and deployment; defaults to `false` |
+| `order` | non-negative integer, optional | stable editorial order on the language index; defaults to `0` |
 | `recipeKey` | string | stable, language-independent connection |
 | `lang` | `de` or `en` | language of this version |
 | `title` | string | recipe title |
@@ -27,6 +29,9 @@ src/content/recipes/white-bean-cinnamon-cream/
 | `slug` | string | language-specific URL segment |
 | `description` | string | card copy and meta description |
 | `tags` | string array | categories shown on the index |
+| `yieldText` | string, optional | localised serving or piece yield, for example `about 15–20 pieces` |
+| `timeItems` | labelled string array, optional | localised preparation, proofing, cooking, and total-time values |
+| `timeNote` | string, optional | visible state-based timing guidance when clock time is only approximate |
 | `heroImage` | image or `fallback` | hero asset with an explicit fallback |
 | `heroAlt` | string | meaningful image description |
 | `ingredientSpotImage` | image, optional | transparent editorial ingredient cutout |
@@ -34,7 +39,20 @@ src/content/recipes/white-bean-cinnamon-cream/
 | `ingredientSections` | array | grouped ingredients |
 | `steps` | array | numbered method steps |
 
-An ingredient section contains `title` and `items`. A step requires `number`, `title`, and `text`; `image`, `imageAlt`, and `note` are optional.
+An ingredient section contains `title` and `items`. A step requires `number`, `title`, and `text`; `image`, `imageAlt`, `note`, and `sketch` are optional. `sketch` selects one of the deliberately recipe-specific responsive line overlays: `toast`, `rinse`, `chill`, `mix`, `bake`, or `espresso`. Omit it when the generated artwork already contains the necessary marks or when no overlay belongs to that action.
+
+A process that genuinely needs four ordered visual states can use separate `sequenceImages` instead of one wide raster composite:
+
+```yaml
+imageAlt: Four images show the shaping sequence
+sequenceImages:
+  first: ./assets/step-02-stage-1.webp
+  second: ./assets/step-02-stage-2.webp
+  third: ./assets/step-02-stage-3.webp
+  fourth: ./assets/step-02-stage-4.webp
+```
+
+The website supplies the arrows and mobile stage numbers. Keeping each state separate prevents responsive arrows from crossing the food artwork and allows the sequence to become a large 2 × 2 arrangement on narrow screens.
 
 ## Optional Fields
 
@@ -51,6 +69,8 @@ An ingredient section contains `title` and `items`. A step requires `number`, `t
 - `video`
 
 Do not add empty fields. The interface renders a box only when the corresponding content exists.
+
+Set `draft: true` while recipe facts, translations, or artwork are still awaiting approval. Draft entries are validated by Astro but do not appear on the index and do not generate production recipe routes. The local development server still exposes their direct detail URLs for layout review. Remove the field or set it to `false` only after the editorial and visual approval checks have passed.
 
 `nutrition` is an array of concise values or notes and renders as a collapsed disclosure. Include a basis such as “per serving” in the content and label calculated values as estimates.
 
@@ -113,6 +133,12 @@ A step image follows the same pattern:
 ```yaml
 image: ./assets/step-01.webp
 imageAlt: Close-up of the prepared ingredients
+```
+
+Add a separate line overlay only when it communicates the action and is not already part of the cutout:
+
+```yaml
+sketch: rinse
 ```
 
 Run `npm run check` after every schema or content change. Invalid fields intentionally stop the build before an incomplete page can be published.

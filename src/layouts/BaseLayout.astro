@@ -45,7 +45,10 @@ const canonicalUrl = Astro.site ? new URL(Astro.url.pathname, Astro.site) : unde
 					<small>{siteConfig.tagline[lang]}</small>
 				</span>
 			</a>
-			<LanguageSwitcher currentLang={lang} links={languageLinks} />
+			<div class="site-header__actions">
+				<a class="site-header__recipes" href={`/${lang}/#recipes`}>{dictionary.recipes}</a>
+				<LanguageSwitcher currentLang={lang} links={languageLinks} />
+			</div>
 		</header>
 
 		<main id="main-content">

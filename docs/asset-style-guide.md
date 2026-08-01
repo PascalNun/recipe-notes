@@ -2,8 +2,10 @@
 
 This document is the single source of truth for generated recipe artwork. It defines the stable visual language of the project; individual prompts define only the subject, action, and crop.
 
-**Style ID:** `CRK-MIXED-MEDIA-V1`  
-**Status:** Production baseline  
+Read it together with the project-wide [editorial charter](editorial-charter.md), which defines the cultural position behind the visual rules.
+
+**Style ID:** `RECIPE-NOTES-MIXED-MEDIA-V1`
+**Status:** Production baseline
 **Applies to:** hero images, step illustrations, ingredient spots, and optional decorative raster assets
 
 If the visual direction changes materially, create a new style version instead of silently changing this one. That keeps older recipes reproducible and prevents a series from drifting during production.
@@ -24,6 +26,12 @@ The target is a contemporary editorial food zine, not a literal copy of the refe
 
 The food must remain the most realistic part of every image. Ink, watercolour, and paper texture should frame and connect the subject rather than obscure its texture.
 
+### Cultural Guardrails
+
+Warmth must come from food, light, paper, pigment, and handwork—not from historical staging. Do not use half-timbered houses, folk costume, nostalgic bakery interiors, country-house props, gingham styling, sentimental family-kitchen scenes, or “grandmother's recipe” imagery. A regionally named pastry can still be shown in a contemporary café and editorial-design context.
+
+The preferred cultural references are contemporary cafés, modern patisserie, independent food publications, architecture, and editorial design. The result should feel designed without becoming sterile and handmade without becoming rustic nostalgia.
+
 ## 2. Reference Hierarchy
 
 References have different jobs. State those jobs explicitly in every generation request.
@@ -37,10 +45,10 @@ Do not ask one reference to control every decision. When references are supplied
 
 ## 3. Immutable Master Style Block
 
-Copy this block unchanged into every asset prompt made under `CRK-MIXED-MEDIA-V1`.
+Copy this block unchanged into every asset prompt made under `RECIPE-NOTES-MIXED-MEDIA-V1`.
 
 ```text
-STYLE ID: CRK-MIXED-MEDIA-V1
+STYLE ID: RECIPE-NOTES-MIXED-MEDIA-V1
 Use case: stylized-concept
 Asset type: contemporary editorial recipe-zine food artwork
 Reference policy: follow the explicit image-by-image reference map at the start of this prompt. Poster references control only the roles assigned to them; do not copy their page, typography, generated text, or exact arrangement. An approved recipe hero outranks poster references for light, palette, food realism, materials, vessels, and shadow treatment. A factual subject reference must not override the visual style.
@@ -50,7 +58,8 @@ Color palette: warm paper white, oat beige, terracotta, muted warm pink, sage gr
 Materials/textures: matte lightly fibrous paper, lightly speckled ceramic, clear glass, natural wood used sparingly, toasted grains and seeds, soft cream, restrained pigment variation
 Food treatment: the food is the most realistic and detailed element; preserve believable moisture, crispness, weight, translucency, and preparation state; keep it recognisable and appetising
 Regional character: express place through seasonal ingredients, restraint, and contemporary café culture; never use nostalgic rural or folk imagery
-Fixed constraints: no text, no letters, no labels, no numbers, no logo, no watermark, no packaging, no invented ingredients, no unrelated garnish, no people, no excessive props, no glossy advertising look, no childish cartoon style, no vintage country-house styling, no folk costumes, no half-timbered architecture
+Cultural direction: contemporary Central European plant-based food culture informed by modern cafés, patisserie, architecture, design magazines, and food zines; warm but not nostalgic, expressive but not folkloric, refined but not sterile
+Fixed constraints: no text, no letters, no labels, no numbers, no logo, no watermark, no packaging, no invented ingredients, no unrelated garnish, no people, no excessive props, no glossy advertising look, no childish cartoon style, no heritage staging, no romantic homeland imagery, no retro bakery interior, no vintage country-house styling, no folk costumes, no half-timbered architecture, no “grandmother's kitchen” symbolism
 ```
 
 ## 4. Prompt Assembly

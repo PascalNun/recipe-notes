@@ -68,7 +68,7 @@ Extract approved artwork to a lossless alpha master, encode the website derivati
 
 ## Shared Style Block
 
-Use `CRK-MIXED-MEDIA-V1` from [asset-style-guide.md](asset-style-guide.md) as the authoritative shared style block. Copy it unchanged into every generation prompt. Use the original reference as a **style and composition reference**, never as an edit target or website background.
+Use `RECIPE-NOTES-MIXED-MEDIA-V1` from [asset-style-guide.md](asset-style-guide.md) as the authoritative shared style block. Copy it unchanged into every generation prompt. Use the original reference as a **style and composition reference**, never as an edit target or website background.
 
 The pilot prompts below are recipe-specific additions. They must be combined with the immutable master style block and the relevant asset-family block from the style guide.
 

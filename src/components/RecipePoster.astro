@@ -8,6 +8,7 @@ import InfoBox from './InfoBox.astro';
 import IngredientsPanel from './IngredientsPanel.astro';
 import NutritionBox from './NutritionBox.astro';
 import RecipeHeader from './RecipeHeader.astro';
+import RecipeMeta from './RecipeMeta.astro';
 import RecipeVideo from './RecipeVideo.astro';
 import StepGrid from './StepGrid.astro';
 import StickerNote from './StickerNote.astro';
@@ -28,6 +29,15 @@ const dictionary = getDictionary(data.lang);
 			<HeroImage src={data.heroImage} alt={data.heroAlt} fallbackLabel={dictionary.imageFallback} />
 			{data.claim && <StickerNote text={data.claim} tone="sage" />}
 			{data.introNote && <p class="recipe-poster__intro">{data.introNote}</p>}
+			{(data.yieldText || data.timeItems) && (
+				<RecipeMeta
+					yieldLabel={dictionary.yieldLabel}
+					timingLabel={dictionary.timingLabel}
+					yieldText={data.yieldText}
+					timeItems={data.timeItems}
+					timeNote={data.timeNote}
+				/>
+			)}
 		</div>
 		<IngredientsPanel
 			title={dictionary.ingredients}

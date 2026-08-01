@@ -6,14 +6,20 @@ import AssetImageWithFallback from './AssetImageWithFallback.astro';
 
 interface Props {
 	recipe: RecipeEntry;
+	index?: number;
 }
 
-const { recipe } = Astro.props;
+const { recipe, index = 0 } = Astro.props;
 const { data } = recipe;
 const dictionary = getDictionary(data.lang);
 ---
 
-<article class="recipe-card">
+<article
+	class:list={['recipe-card', `recipe-card--accent-${(index % 3) + 1}`]}
+	data-recipe-card
+	data-search={[data.title, data.subtitle, data.description, ...data.tags].join(' ').toLocaleLowerCase(data.lang)}
+	data-tags={data.tags.join('|').toLocaleLowerCase(data.lang)}
+>
 	<a href={getRecipeUrl(recipe)} class="recipe-card__image" tabindex="-1" aria-hidden="true">
 		<AssetImageWithFallback
 			src={data.heroImage}
@@ -23,7 +29,6 @@ const dictionary = getDictionary(data.lang);
 		/>
 	</a>
 	<div class="recipe-card__content">
-		<p class="recipe-card__kicker">{dictionary.featuredRecipe}</p>
 		<h2><a href={getRecipeUrl(recipe)}>{data.title}</a></h2>
 		<p class="recipe-card__subtitle">{data.subtitle}</p>
 		<p>{data.description}</p>

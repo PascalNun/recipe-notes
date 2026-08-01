@@ -4,16 +4,20 @@ export type Language = (typeof supportedLanguages)[number];
 
 export const siteConfig = {
 	name: {
-		de: 'Neue Regionale Küche',
-		en: 'Contemporary Regional Kitchen',
+		de: 'Recipe Notes',
+		en: 'Recipe Notes',
+	},
+	displayNameLines: {
+		de: ['Recipe', 'Notes'],
+		en: ['Recipe', 'Notes'],
 	},
 	tagline: {
-		de: 'Pflanzlich. Urban. Eigenständig.',
-		en: 'Plant-based. Urban. Distinctive.',
+		de: 'Nah gedacht. Frei kombiniert.',
+		en: 'Rooted nearby. Combined freely.',
 	},
 	intro: {
-		de: 'Ein digitales Rezept-Zine für neue regionale Ideen: pflanzlich gedacht, alltagstauglich gekocht und mit Freude an Creme, Crunch und Röstaromen gestaltet.',
-		en: 'A digital recipe zine for a new kind of regional cooking: plant-based, made for everyday life, and shaped by a love of creaminess, crunch and toasted flavours.',
+		de: 'Ein wachsendes digitales Rezeptbuch mit pflanzlichen Rezepten, eigenen Entwürfen und frei kombinierten Einflüssen.',
+		en: 'A growing digital recipe book of plant-based recipes, original ideas and freely combined influences.',
 	},
 } as const;
 
