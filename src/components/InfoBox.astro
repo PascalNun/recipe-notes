@@ -19,7 +19,7 @@ const { title, items, text, tone = 'sage', icon = '♡', decoration, artwork, ar
 <aside class:list={['info-box', `info-box--${tone}`]}>
 	<header>
 		<h2>{title}</h2>
-		<span aria-hidden="true">{icon}</span>
+		{icon && <span aria-hidden="true">{icon}</span>}
 	</header>
 	{items && (
 		<ul>
@@ -48,13 +48,21 @@ const { title, items, text, tone = 'sage', icon = '♡', decoration, artwork, ar
 		</svg>
 	)}
 	{decoration === 'skyline' && (
-		<svg class="info-box__decoration info-box__decoration--skyline" viewBox="0 0 220 92" aria-hidden="true">
-			<path class="info-box__decoration-wash" d="M5 66c31-15 47-9 70-18 29-12 43-3 70-12 31-11 46-4 69 4l-3 42H8Z" />
-			<path d="M3 80c34 2 60-2 92 0 45 3 79-2 122 1" />
-			<path d="M13 80V65l14-4 13 4v15M46 80V49l19-5 18 5v31M89 80V61l14-4 15 4v19M124 80V39l20-7 19 7v41M169 80V57l18-5 20 6v22" />
-			<path d="m52 49 12-12 13 11M131 38l3-12 6-5 7 17M181 55v-9m-5 3h11" />
-			<path d="M20 70h7m26-10h7m11 0h6m19 10h7m29-17h7m14 0h6m19 16h8M58 70v7m14-7v7m62-25v8m14-8v8m34 11v7" />
-			<path class="info-box__decoration-botanical" d="M200 47c-2-17 2-30 12-42m-9 27c-9-2-13-7-14-14 7 0 12 5 14 14m4-12c7-2 10-7 10-13-7 1-10 6-10 13" />
+		<svg class="info-box__decoration info-box__decoration--skyline" viewBox="0 0 240 96" aria-hidden="true">
+			<path class="info-box__decoration-wash" d="M5 74c30-8 51-5 77-10 33-7 56 2 86-4 25-5 43-2 67 5l-2 20H7Z" />
+			<path class="info-box__decoration-city-shadow" d="M14 80V69h20V59h25V49h22v14h21V42h26v15h25V34h22V22h22v36h30v22Z" />
+			<path class="info-box__decoration-building-wash" d="M18 64h18v17H18zm24-10h25v27H42zm69-14h24v41h-24zm51-10h19v51h-19zm25-13h17v64h-17z" />
+			<path d="M4 81c31 2 58-1 87 0 43 2 82-2 145 1" />
+			<path d="M13 81V69h17v12M36 81V60h23v21M65 81V50h18v31M89 81V64h17v17M112 81V45h23v36M141 81V58h16v23M162 81V35h19v46M187 81V23h17v58M210 81V59h18v22" />
+			<path d="M36 60h23M65 50h18M112 45h23M162 35h19M187 23h17M192 23V13m-4 5h12M214 59v-7m-4 3h8" />
+			<path d="M19 74h5m18-7h5m7 0h-4m21-9h5m0 9h-5m24 4h5m18-18h5m6 0h-5m0 10h5m21 3h5m12-22h5m6 0h-5m0 11h5m13-23h5m0 10h-5m0 11h5m13 13h5" />
+			<path class="info-box__decoration-greenery" d="M8 82c2-7 4-8 5-1m17 1c1-6 4-8 5-1m48 1c2-8 4-10 6-1m43 1c1-7 4-9 5-1m35 1c2-8 4-10 6-1m29 1c1-7 4-9 5-1m17 1c1-6 4-8 5-1" />
+			<path class="info-box__decoration-botanical" d="M224 59c-2-16 1-29 10-42m-8 27c-8-2-12-7-13-13 7 0 11 4 13 13m3-12c6-2 9-6 9-12-6 1-9 5-9 12" />
+			<g class="info-box__decoration-speckles">
+				<circle cx="11" cy="70" r="1" /><circle cx="28" cy="85" r="0.8" /><circle cx="74" cy="82" r="1.1" />
+				<circle cx="99" cy="67" r="0.7" /><circle cx="145" cy="84" r="1" /><circle cx="183" cy="83" r="0.8" />
+				<circle cx="218" cy="74" r="1.1" /><circle cx="233" cy="84" r="0.7" />
+			</g>
 		</svg>
 	)}
 	{decoration === 'sprig' && (

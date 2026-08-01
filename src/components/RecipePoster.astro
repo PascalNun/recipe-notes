@@ -82,9 +82,9 @@ const dictionary = getDictionary(data.lang);
 		{data.environmentalNotes && (
 			<InfoBox title={dictionary.regionalThought} items={data.environmentalNotes} tone="sage" icon="⌁" />
 		)}
-		{data.nutrition && <NutritionBox title={dictionary.nutrition} nutrition={data.nutrition} />}
 		{data.storage && <InfoBox title={dictionary.storage} text={data.storage} tone="blue" icon="○" />}
 		{data.tips && <InfoBox title={dictionary.tips} items={data.tips} tone="oat" icon="!" />}
+		{data.nutrition && <NutritionBox title={dictionary.nutrition} nutrition={data.nutrition} />}
 		<aside class="signoff-note" aria-label="Zine note">
 			<i class="signoff-note__tape" aria-hidden="true"></i>
 			<i class="signoff-note__hatch signoff-note__hatch--top" aria-hidden="true"></i>
