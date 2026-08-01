@@ -1,0 +1,24 @@
+---
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+	title: string;
+	src: string;
+	type?: 'video/mp4' | 'video/webm';
+	poster?: ImageMetadata;
+	caption?: string;
+}
+
+const { title, src, type = 'video/mp4', poster, caption } = Astro.props;
+---
+
+<section class="recipe-video" aria-labelledby="recipe-video-title">
+	<div class="recipe-video__heading">
+		<span aria-hidden="true">▶</span>
+		<h2 id="recipe-video-title">{title}</h2>
+	</div>
+	<video controls playsinline preload="none" poster={poster?.src}>
+		<source src={src} type={type} />
+	</video>
+	{caption && <p>{caption}</p>}
+</section>

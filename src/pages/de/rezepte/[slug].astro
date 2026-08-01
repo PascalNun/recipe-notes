@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import type { RecipeEntry } from '../../../lib/recipes';
+import { getRecipeTranslation, getRecipeUrl } from '../../../lib/recipes';
+import { supportedLanguages } from '../../../config/site';
+import { getDictionary } from '../../../i18n';
+import RecipePoster from '../../../components/RecipePoster.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+	const allRecipes = await getCollection('recipes');
+	return allRecipes
+		.filter((recipe) => recipe.data.lang === 'de')
+		.map((recipe) => ({ params: { slug: recipe.data.slug }, props: { recipe, allRecipes } }));
+}
+
+interface Props {
+	recipe: RecipeEntry;
+	allRecipes: RecipeEntry[];
+}
+
+const { recipe, allRecipes } = Astro.props;
+const dictionary = getDictionary('de');
+const languageLinks = supportedLanguages.map((lang) => {
+	const translation = getRecipeTranslation(recipe, allRecipes, lang);
+	return { lang, href: translation ? getRecipeUrl(translation) : undefined };
+});
+---
+
+<BaseLayout
+	title={`${recipe.data.title} — ${recipe.data.subtitle}`}
+	description={recipe.data.description}
+	lang="de"
+	languageLinks={languageLinks}
+	pageClass="page-recipe"
+>
+	<div class="recipe-page-shell">
+		<a class="back-link" href="/de/"><span aria-hidden="true">←</span> {dictionary.backToOverview}</a>
+		<RecipePoster recipe={recipe} />
+	</div>
+</BaseLayout>

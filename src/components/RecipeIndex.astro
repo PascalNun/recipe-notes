@@ -1,0 +1,42 @@
+---
+import type { Language } from '../config/site';
+import { siteConfig } from '../config/site';
+import type { RecipeEntry } from '../lib/recipes';
+import { getDictionary } from '../i18n';
+import RecipeCard from './RecipeCard.astro';
+
+interface Props {
+	lang: Language;
+	recipes: RecipeEntry[];
+}
+
+const { lang, recipes } = Astro.props;
+const dictionary = getDictionary(lang);
+---
+
+<div class="index-page">
+	<section class="index-hero" aria-labelledby="collection-title">
+		<div class="index-hero__copy">
+			<p class="index-hero__issue">{dictionary.collectionLabel}</p>
+			<h1 id="collection-title">{siteConfig.name[lang]}</h1>
+			<p class="index-hero__tagline">{siteConfig.tagline[lang]}</p>
+			<p class="index-hero__intro">{siteConfig.intro[lang]}</p>
+		</div>
+		<div class="index-hero__collage" aria-hidden="true">
+			<span class="index-hero__sun">✺</span>
+			<span class="index-hero__note">cream<br />crunch<br />freshness</span>
+			<span class="index-hero__line"></span>
+			<strong>01</strong>
+		</div>
+	</section>
+
+	<section class="recipe-index" aria-labelledby="recipes-title">
+		<div class="section-title section-title--index">
+			<h2 id="recipes-title">{dictionary.recipes}</h2>
+			<span aria-hidden="true">♡</span>
+		</div>
+		<div class="recipe-index__grid">
+			{recipes.map((recipe) => <RecipeCard recipe={recipe} />)}
+		</div>
+	</section>
+</div>

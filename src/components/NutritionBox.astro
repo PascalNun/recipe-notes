@@ -1,0 +1,15 @@
+---
+interface Props {
+	title: string;
+	items: string[];
+}
+
+const { title, items } = Astro.props;
+---
+
+<details class="nutrition-disclosure">
+	<summary>{title}<span aria-hidden="true">＋</span></summary>
+	<ul>
+		{items.map((item) => <li>{item}</li>)}
+	</ul>
+</details>

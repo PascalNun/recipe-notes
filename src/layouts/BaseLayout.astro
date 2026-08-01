@@ -1,0 +1,60 @@
+---
+import type { Language } from '../config/site';
+import { siteConfig } from '../config/site';
+import { getDictionary } from '../i18n';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import '../styles/global.css';
+
+interface LanguageLink {
+	lang: Language;
+	href?: string;
+}
+
+interface Props {
+	title: string;
+	description: string;
+	lang: Language;
+	languageLinks: LanguageLink[];
+	pageClass?: string;
+}
+
+const { title, description, lang, languageLinks, pageClass = '' } = Astro.props;
+const dictionary = getDictionary(lang);
+const canonicalUrl = Astro.site ? new URL(Astro.url.pathname, Astro.site) : undefined;
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<meta name="theme-color" content="#f6f0e4" />
+		{canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+		{languageLinks.map((link) => link.href && <link rel="alternate" hreflang={link.lang} href={link.href} />)}
+		<title>{title}</title>
+	</head>
+	<body class={pageClass}>
+		<a class="skip-link" href="#main-content">{dictionary.skipToContent}</a>
+		<header class="site-header">
+			<a class="site-brand" href={`/${lang}/`} aria-label={siteConfig.name[lang]}>
+				<span class="site-brand__mark" aria-hidden="true">✦</span>
+				<span>
+					<strong>{siteConfig.name[lang]}</strong>
+					<small>{siteConfig.tagline[lang]}</small>
+				</span>
+			</a>
+			<LanguageSwitcher currentLang={lang} links={languageLinks} />
+		</header>
+
+		<main id="main-content">
+			<slot />
+		</main>
+
+		<footer class="site-footer">
+			<p>{dictionary.footerNote}</p>
+			<span aria-hidden="true">♡</span>
+		</footer>
+	</body>
+</html>
