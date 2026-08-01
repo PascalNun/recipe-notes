@@ -1,14 +1,16 @@
 # Recipe Notes
 
-I built Recipe Notes primarily as a personal, growing recipe archive: a place to keep recipes I develop, refine, cook, and want to return to. Publishing the archive as a bilingual website makes it pleasant to browse, simple to share, and straightforward to maintain over time.
+I built Recipe Notes primarily as a personal, long-term recipe archive: a place to keep recipes I develop, refine, cook, and want to return to. Publishing the archive as a bilingual website makes it pleasant to browse, simple to share, and straightforward to maintain over time.
 
-The project translates the visual language of a contemporary handmade food zine into an editable, responsive web system. Content lives in Markdown, images can be replaced independently, and new recipes do not require a CMS.
+That archival purpose shapes the implementation. The site is deliberately simple and robust: recipes live in plain Markdown files, images are stored alongside them, pages are generated statically, and very little browser JavaScript is required. The collection should remain understandable, portable, and maintainable for years without depending on a database, a CMS, or a proprietary service.
+
+Within that durable foundation, the project translates the visual language of a contemporary handmade food zine into an editable, responsive web system.
 
 Live site: [recipes.pascalnun.eu](https://recipes.pascalnun.eu)
 
 ## Project Goal
 
-The primary goal is a durable personal home for recipes rather than a content platform with a complex publishing workflow. Version 1 deliberately focuses on a small, dependable foundation:
+The primary goal is a durable personal home for recipes rather than a content platform with a complex publishing workflow. Longevity matters more than feature breadth, so version 1 deliberately focuses on a small, dependable foundation:
 
 - German and English landing pages and recipe detail pages
 - three complete illustrated recipes in both languages
