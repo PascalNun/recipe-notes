@@ -1,0 +1,31 @@
+---
+interface Props {
+	yieldLabel: string;
+	timingLabel: string;
+	yieldText?: string;
+	timeItems?: Array<{ label: string; value: string }>;
+	timeNote?: string;
+}
+
+const { yieldLabel, timingLabel, yieldText, timeItems, timeNote } = Astro.props;
+---
+
+<aside class="recipe-meta" aria-label={timingLabel}>
+	{yieldText && (
+		<p class="recipe-meta__yield">
+			<span>{yieldLabel}</span>
+			<strong>{yieldText}</strong>
+		</p>
+	)}
+	{timeItems && (
+		<dl class="recipe-meta__times">
+			{timeItems.map((item) => (
+				<div>
+					<dt>{item.label}</dt>
+					<dd>{item.value}</dd>
+				</div>
+			))}
+		</dl>
+	)}
+	{timeNote && <p class="recipe-meta__note">{timeNote}</p>}
+</aside>

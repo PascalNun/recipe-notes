@@ -9,28 +9,21 @@ The production site is available at `https://recipes.pascalnun.eu`. It runs alon
 
 ## 1. Publish the Source on GitHub
 
-The local repository is already initialised on the `main` branch. Before publishing, decide:
+The local repository is initialised on the `main` branch and published as the private `PascalNun/recipe-notes` repository.
 
-- repository name, recommended: `contemporary-regional-kitchen`
-- visibility: public or private
-- licence: no licence is selected yet
+Clone it with:
 
-Create an empty repository on GitHub without adding a README, `.gitignore`, or licence. Then run:
+```bash
+git clone https://github.com/PascalNun/recipe-notes.git
+```
+
+Future changes use the normal commit and push workflow:
 
 ```bash
 git add .
-git commit -m "Initial recipe zine"
-git remote add origin https://github.com/<account>/contemporary-regional-kitchen.git
-git push -u origin main
+git commit -m "Describe the change"
+git push
 ```
-
-Alternatively, with an authenticated GitHub CLI:
-
-```bash
-gh repo create contemporary-regional-kitchen --public --source=. --remote=origin --push
-```
-
-Replace `--public` with `--private` if required. Do not run both methods.
 
 ## 2. Prepare Local Deployment Configuration
 
@@ -43,11 +36,11 @@ cp .env.example .env.local
 Fill in the VPS details in `.env.local`:
 
 ```bash
-CRK_VPS_HOST="server.example.com"
-CRK_VPS_USER="deploy-user"
-CRK_VPS_SSH_KEY="/absolute/path/to/private-key"
-CRK_VPS_WEB_ROOT="/var/www/contemporary-regional-kitchen"
-CRK_VPS_WEB_GROUP="www-data"
+RECIPE_NOTES_VPS_HOST="server.example.com"
+RECIPE_NOTES_VPS_USER="deploy-user"
+RECIPE_NOTES_VPS_SSH_KEY="/absolute/path/to/private-key"
+RECIPE_NOTES_VPS_WEB_ROOT="/var/www/recipe-notes"
+RECIPE_NOTES_VPS_WEB_GROUP="www-data"
 ```
 
 `.env.local` is ignored by Git and must never be committed. The optional SSH key value can be omitted when the default SSH agent already knows the correct key.
@@ -57,9 +50,9 @@ CRK_VPS_WEB_GROUP="www-data"
 The deployment helper creates an independent document root using passwordless `sudo`, assigns it to the deployment user and nginx's group, and applies read-only public file permissions after synchronisation. The existing server already uses this privilege pattern for controlled deployments. To prepare it manually instead, run:
 
 ```bash
-sudo mkdir -p /var/www/contemporary-regional-kitchen
-sudo chown -R <deploy-user>:www-data /var/www/contemporary-regional-kitchen
-sudo chmod -R 775 /var/www/contemporary-regional-kitchen
+sudo mkdir -p /var/www/recipe-notes
+sudo chown -R <deploy-user>:www-data /var/www/recipe-notes
+sudo chmod -R 775 /var/www/recipe-notes
 ```
 
 Use a dedicated nginx server block. Replace the domain and paths as required:
@@ -70,7 +63,7 @@ server {
     listen [::]:80;
     server_name recipes.pascalnun.eu;
 
-    root /var/www/contemporary-regional-kitchen;
+    root /var/www/recipe-notes;
     index index.html;
 
     location / {
@@ -82,7 +75,7 @@ server {
 Enable and validate the configuration using the conventions of the existing server, then add TLS with the same certificate workflow already used for the main website. For a typical Debian or Ubuntu nginx installation:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/contemporary-regional-kitchen /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/recipe-notes /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 ```

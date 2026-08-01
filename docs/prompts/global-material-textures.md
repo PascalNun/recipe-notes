@@ -1,6 +1,6 @@
 # Global Material Textures
 
-These two non-semantic global assets provide the shared physical surface for `CRK-MIXED-MEDIA-V1`. They contain no recipe information and may be reused across the collection.
+These two non-semantic global assets provide the shared physical surface for `RECIPE-NOTES-MIXED-MEDIA-V1`. They contain no recipe information and may be reused across the collection.
 
 - **Generation mode:** built-in ImageGen
 - **Paper:** `public/assets/global/paper-texture-v1.webp`

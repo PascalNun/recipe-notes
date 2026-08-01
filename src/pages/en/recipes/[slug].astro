@@ -8,7 +8,8 @@ import RecipePoster from '../../../components/RecipePoster.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
-	const allRecipes = await getCollection('recipes');
+	const recipes = await getCollection('recipes');
+	const allRecipes = import.meta.env.DEV ? recipes : recipes.filter((recipe) => !recipe.data.draft);
 	return allRecipes
 		.filter((recipe) => recipe.data.lang === 'en')
 		.map((recipe) => ({ params: { slug: recipe.data.slug }, props: { recipe, allRecipes } }));

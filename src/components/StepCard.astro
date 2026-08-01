@@ -8,6 +8,7 @@ interface Props {
 		number: number;
 		title: string;
 		text: string;
+		sketch?: 'toast' | 'rinse' | 'chill' | 'mix' | 'bake' | 'espresso';
 		image?: ImageMetadata | 'fallback';
 		imageAlt?: string;
 		sequenceImages?: {
@@ -26,9 +27,18 @@ const stepAlt = step.imageAlt ?? `${step.number}. ${step.title}`;
 const hasStepImage = step.image && step.image !== 'fallback';
 const sequenceImages = step.sequenceImages ? Object.values(step.sequenceImages) : [];
 const hasSequence = sequenceImages.length > 0;
+const hasPortraitSequence = hasSequence && sequenceImages.every((image) => image.height / image.width > 1.25);
 ---
 
-<article class:list={['step-card', `step-card--${step.number}`, { 'step-card--wide': step.number === 7 }]}>
+<article class:list={[
+	'step-card',
+	`step-card--${step.number}`,
+	{
+		'step-card--wide': step.number === 7,
+		'step-card--sequence': hasSequence,
+		'step-card--sequence-portrait': hasPortraitSequence,
+	},
+]}>
 	<header class="step-card__header">
 		<span class="step-card__number">{step.number}</span>
 		<h3>{step.title}</h3>
@@ -38,7 +48,7 @@ const hasSequence = sequenceImages.length > 0;
 			<div class="step-card__sequence" role="img" aria-label={stepAlt}>
 				{sequenceImages.map((image, index) => (
 					<>
-						<figure class="step-card__sequence-glass">
+						<figure class="step-card__sequence-glass" data-stage={index + 1}>
 							<Image
 								src={image}
 								alt=""
@@ -65,7 +75,7 @@ const hasSequence = sequenceImages.length > 0;
 				number={step.number}
 			/>
 		)}
-		{hasStepImage && step.number === 1 && (
+		{hasStepImage && step.sketch === 'toast' && (
 			<svg class="step-card__sketch step-card__sketch--toast" viewBox="0 0 240 170" aria-hidden="true">
 				<path d="M78 54c19-18 48-19 69-5 8 5 14 12 17 20" />
 				<path d="M155 60l10 10 2-14" />
@@ -75,32 +85,32 @@ const hasSequence = sequenceImages.length > 0;
 				<path d="M202 74l14-8M207 88l17 1M201 101l12 9" />
 			</svg>
 		)}
-		{hasStepImage && step.number === 2 && (
+		{hasStepImage && step.sketch === 'rinse' && (
 			<svg class="step-card__sketch step-card__sketch--rinse" viewBox="0 0 240 170" aria-hidden="true">
 				<path d="M38 39c-9 12-10 18-1 22 10-3 9-10 1-22ZM58 25c-7 10-7 15 0 18 8-3 7-8 0-18Z" />
 				<path d="M184 32l8-10M198 40l13-4M190 52l10 8" />
 			</svg>
 		)}
-		{hasStepImage && step.number === 3 && (
+		{hasStepImage && step.sketch === 'chill' && (
 			<svg class="step-card__sketch step-card__sketch--chill" viewBox="0 0 240 170" aria-hidden="true">
 				<path d="M39 121v32M23 137h32M28 126l22 22M50 126l-22 22" />
 				<path d="M195 32l8-10M202 42l14-2M198 53l11 8" />
 			</svg>
 		)}
-		{hasStepImage && step.number === 4 && (
+		{hasStepImage && step.sketch === 'mix' && (
 			<svg class="step-card__sketch step-card__sketch--mix" viewBox="0 0 240 170" aria-hidden="true">
 				<ellipse cx="29" cy="105" rx="7" ry="3" transform="rotate(-24 29 105)" />
 				<ellipse cx="46" cy="118" rx="6" ry="2.8" transform="rotate(19 46 118)" />
 				<path d="M190 37l13-8M194 50l17 1M188 62l12 10" />
 			</svg>
 		)}
-		{hasStepImage && step.number === 5 && (
+		{hasStepImage && step.sketch === 'bake' && (
 			<svg class="step-card__sketch step-card__sketch--bake" viewBox="0 0 240 170" aria-hidden="true">
 				<path d="M30 52c-8-9-19 2 0 17 19-15 8-26 0-17Z" />
 				<path d="M197 37l4-13M208 44l13-7M210 57l14 4" />
 			</svg>
 		)}
-		{hasStepImage && step.number === 6 && (
+		{hasStepImage && step.sketch === 'espresso' && (
 			<svg class="step-card__sketch step-card__sketch--espresso" viewBox="0 0 240 170" aria-hidden="true">
 				<path d="M35 61c-8 12-8 18 0 22 9-4 9-10 0-22Z" />
 				<path d="M188 37l13-8M193 50l16 1M188 63l11 9" />

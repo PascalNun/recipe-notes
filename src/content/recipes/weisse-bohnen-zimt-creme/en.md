@@ -1,4 +1,5 @@
 ---
+order: 1
 recipeKey: white-bean-cinnamon-cream
 lang: en
 title: White Bean Cinnamon Cream
@@ -27,8 +28,7 @@ introNote: A dessert made with ingredients that can plausibly be grown in Centra
 ingredientSections:
   - title: For the cream
     items:
-      - 1 can white beans, about 240 g drained
-      - plain white beans packed in water or brine
+      - 1 can white beans packed in water or brine, about 240 g drained
       - 150–200 g vegan skyr or soy yoghurt
       - 2 tbsp agave syrup
       - 2 tbsp sugar
@@ -60,34 +60,40 @@ steps:
   - number: 1
     title: Toast the sunflower seeds
     text: Gently toast the sunflower seeds in a dry pan or in the oven until they smell warm, nutty and lightly caramelised. Do not let them get too dark. Blend while still warm until creamy, adding the smallest amount of oil only if needed.
+    sketch: toast
     image: ./assets/step-01.webp
     imageAlt: Toasted sunflower seeds in a dark pan beside a blender containing smooth sunflower seed butter
   - number: 2
     title: Prepare the beans
     text: Rinse the beans very thoroughly and leave them to drain briefly. For an even more neutral flavour, you can rinse them once with hot water.
+    sketch: rinse
     image: ./assets/step-02.webp
     imageAlt: Rinsed white beans draining in a stainless-steel colander
     note: This makes them milder, creamier and less bean-like.
   - number: 3
     title: Make the cream
     text: Blend the beans, sunflower seed butter and a small splash of plant milk until as smooth as possible. Add the vegan skyr or yoghurt, agave, sugar, stevia, vanilla, cinnamon, salt and lime juice, then blend again until very fine.
+    sketch: chill
     image: ./assets/step-03.webp
     imageAlt: Countertop blender filled with smooth pale white bean cinnamon cream
     note: Chill for 20–30 minutes. The cream will become a little firmer.
   - number: 4
     title: Prepare the oat crunch
     text: Mix all the ingredients together. The mixture should feel lightly moist and remain a little crumbly.
+    sketch: mix
     image: ./assets/step-04.webp
     imageAlt: Bowl of moist oat crunch mixture with a spoon
   - number: 5
     title: Bake the crunch
     text: Spread the mixture fairly thinly and unevenly on baking paper. Bake at 175 °C conventional heat for about 18–25 minutes. Turn and loosen it once during baking.
+    sketch: bake
     image: ./assets/step-05.webp
     imageAlt: Golden oat crunch on a dark baking tray beside a small oven
     note: Leave it to cool completely.
   - number: 6
     title: Add the espresso finish
     text: Lightly drizzle the crunch with espresso.
+    sketch: espresso
     image: ./assets/step-06.webp
     imageAlt: Espresso dripping from a spoon onto oat crunch in a bowl
     note: Do not soak it – the aim is simply to add a little aroma.

@@ -35,7 +35,7 @@ Ingredient illustrations:
   ingredient-<name>.webp — isolated transparent subject
 
 Shared visual language:
-  Style ID: CRK-MIXED-MEDIA-V1
+  Style ID: RECIPE-NOTES-MIXED-MEDIA-V1
   Approved recipe anchor:
   Factual references:
 ```

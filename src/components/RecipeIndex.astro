@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import type { Language } from '../config/site';
 import { siteConfig } from '../config/site';
 import type { RecipeEntry } from '../lib/recipes';
@@ -12,31 +13,148 @@ interface Props {
 
 const { lang, recipes } = Astro.props;
 const dictionary = getDictionary(lang);
+const featuredRecipe = recipes[0];
+const titleLines = siteConfig.displayNameLines[lang];
+const tags = [...new Set(recipes.flatMap((recipe) => recipe.data.tags))].sort((first, second) => first.localeCompare(second, lang));
 ---
 
 <div class="index-page">
 	<section class="index-hero" aria-labelledby="collection-title">
 		<div class="index-hero__copy">
-			<p class="index-hero__issue">{dictionary.collectionLabel}</p>
-			<h1 id="collection-title">{siteConfig.name[lang]}</h1>
+			<h1 id="collection-title">
+				{titleLines.map((line, index) => <span class:list={{ 'index-hero__title-accent': index === 1 }}>{line}</span>)}
+			</h1>
 			<p class="index-hero__tagline">{siteConfig.tagline[lang]}</p>
 			<p class="index-hero__intro">{siteConfig.intro[lang]}</p>
 		</div>
 		<div class="index-hero__collage" aria-hidden="true">
-			<span class="index-hero__sun">✺</span>
-			<span class="index-hero__note">cream<br />crunch<br />freshness</span>
-			<span class="index-hero__line"></span>
-			<strong>01</strong>
+			{featuredRecipe?.data.ingredientSpotImage && (
+				<figure class="index-hero__sunflower">
+					<Image
+						src={featuredRecipe.data.ingredientSpotImage}
+						alt=""
+						widths={[320, 480, 640]}
+						sizes="(max-width: 608px) 48vw, 20rem"
+						quality={80}
+					/>
+				</figure>
+			)}
+			{featuredRecipe?.data.ingredientEspressoImage && (
+				<figure class="index-hero__espresso">
+					<Image
+						src={featuredRecipe.data.ingredientEspressoImage}
+						alt=""
+						widths={[240, 360, 480]}
+						sizes="(max-width: 608px) 30vw, 9rem"
+						quality={80}
+					/>
+				</figure>
+			)}
+			<div class="index-hero__field-note">
+				{dictionary.homeTraits.map((trait) => <span>{trait}</span>)}
+				<i>♡</i>
+			</div>
+			<svg class="index-hero__scribble" viewBox="0 0 180 120">
+				<path d="M18 96c28-16 52-15 72-1 23 16 45 15 72-4M24 31l14-19M40 37l22-12M47 51l22 2" />
+				<ellipse cx="133" cy="34" rx="10" ry="4" transform="rotate(-27 133 34)" />
+				<ellipse cx="154" cy="47" rx="9" ry="3.5" transform="rotate(22 154 47)" />
+			</svg>
 		</div>
 	</section>
 
-	<section class="recipe-index" aria-labelledby="recipes-title">
-		<div class="section-title section-title--index">
-			<h2 id="recipes-title">{dictionary.recipes}</h2>
-			<span aria-hidden="true">♡</span>
+	<section class="recipe-index" id="recipes" aria-labelledby="recipes-title" data-recipe-browser>
+		<header class="recipe-index__header">
+			<div class="section-title section-title--index">
+				<h2 id="recipes-title">{dictionary.allRecipes}</h2>
+				<span aria-hidden="true">♡</span>
+			</div>
+			<p>{dictionary.collectionNote}</p>
+		</header>
+
+		<div class="recipe-browser" role="search">
+			<div class="recipe-search">
+				<label for="recipe-search">{dictionary.searchLabel}</label>
+				<div class="recipe-search__field">
+					<svg viewBox="0 0 32 32" aria-hidden="true">
+						<circle cx="13.5" cy="13.5" r="8.5" />
+						<path d="m20 20 8 8" />
+					</svg>
+					<input id="recipe-search" type="search" placeholder={dictionary.searchPlaceholder} autocomplete="off" data-recipe-search />
+				</div>
+			</div>
+
+			<div class="recipe-filters">
+				<span>{dictionary.filterLabel}</span>
+				<div class="recipe-filters__list" data-recipe-filters>
+					<button type="button" class="is-active" data-recipe-tag="" aria-pressed="true">{dictionary.allTags}</button>
+					{tags.map((tag) => (
+						<button type="button" data-recipe-tag={tag.toLocaleLowerCase(lang)} aria-pressed="false">{tag}</button>
+					))}
+				</div>
+			</div>
+
+			<p class="recipe-browser__count" aria-live="polite" data-recipe-count
+				data-singular={dictionary.recipeSingular}
+				data-plural={dictionary.recipePlural}
+			>
+				{recipes.length} {recipes.length === 1 ? dictionary.recipeSingular : dictionary.recipePlural}
+			</p>
 		</div>
-		<div class="recipe-index__grid">
-			{recipes.map((recipe) => <RecipeCard recipe={recipe} />)}
+
+		<div class="recipe-index__grid" id="recipe-grid">
+			{recipes.map((recipe, index) => <RecipeCard recipe={recipe} index={index} />)}
 		</div>
+		<p class="recipe-index__empty" data-recipe-empty hidden>{dictionary.noResults}<span aria-hidden="true">♡</span></p>
 	</section>
 </div>
+
+<script>
+	const browser = document.querySelector<HTMLElement>('[data-recipe-browser]');
+
+	if (browser) {
+		const search = browser.querySelector<HTMLInputElement>('[data-recipe-search]');
+		const cards = [...browser.querySelectorAll<HTMLElement>('[data-recipe-card]')];
+		const tagButtons = [...browser.querySelectorAll<HTMLButtonElement>('[data-recipe-tag]')];
+		const count = browser.querySelector<HTMLElement>('[data-recipe-count]');
+		const empty = browser.querySelector<HTMLElement>('[data-recipe-empty]');
+		let activeTag = '';
+
+		const normalise = (value: string) => value.trim().toLocaleLowerCase(document.documentElement.lang);
+
+		const update = () => {
+			const query = normalise(search?.value ?? '');
+			let visibleCount = 0;
+
+			cards.forEach((card) => {
+				const searchableText = card.dataset.search ?? '';
+				const cardTags = (card.dataset.tags ?? '').split('|');
+				const matchesQuery = !query || searchableText.includes(query);
+				const matchesTag = !activeTag || cardTags.includes(activeTag);
+				const isVisible = matchesQuery && matchesTag;
+
+				card.hidden = !isVisible;
+				if (isVisible) visibleCount += 1;
+			});
+
+			if (count) {
+				const label = visibleCount === 1 ? count.dataset.singular : count.dataset.plural;
+				count.textContent = `${visibleCount} ${label}`;
+			}
+
+			if (empty) empty.hidden = visibleCount !== 0;
+		};
+
+		search?.addEventListener('input', update);
+		tagButtons.forEach((button) => {
+			button.addEventListener('click', () => {
+				activeTag = button.dataset.recipeTag ?? '';
+				tagButtons.forEach((candidate) => {
+					const isActive = candidate === button;
+					candidate.classList.toggle('is-active', isActive);
+					candidate.setAttribute('aria-pressed', String(isActive));
+				});
+				update();
+			});
+		});
+	}
+</script>

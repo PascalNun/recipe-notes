@@ -2,7 +2,7 @@
 
 This production note records the first three-asset pilot for the white bean cinnamon cream recipe. It should be read together with [the asset style guide](../asset-style-guide.md).
 
-- **Style ID:** `CRK-MIXED-MEDIA-V1`
+- **Style ID:** `RECIPE-NOTES-MIXED-MEDIA-V1`
 - **Generation mode:** built-in ImageGen
 - **Recipe-specific reference:** [`../ref-img/image.png`](../ref-img/image.png)
 - **Cross-recipe style reference:** [`../ref-img/imagezopf.png`](../ref-img/imagezopf.png)
@@ -20,7 +20,7 @@ Reference map:
 - Image 1 is the recipe-specific white bean cinnamon cream poster. Use it for the dish identity, mixed-media balance, warm paper atmosphere, visual density, and editorial energy. Do not copy its text or page layout.
 - Image 2 is a cross-recipe cinnamon-bun poster. Use it only to identify the stable series language: believable food, warm café light, restrained ink, watercolour, collage edges, and contemporary hand-made refinement.
 
-[Insert the immutable CRK-MIXED-MEDIA-V1 master style block here verbatim.]
+[Insert the immutable RECIPE-NOTES-MIXED-MEDIA-V1 master style block here verbatim.]
 
 Asset family: hero.
 Create one compact editorial three-quarter composition of a clear straight-sided dessert glass layered with smooth pale white-bean cinnamon cream and crisp oat crunch. Make the cream velvety and appetising, with visible cinnamon flecks but no visible whole beans. Show convincing toasted oat clusters and sunflower-seed texture. Beside it, place one small speckled ceramic espresso cup, half a fresh lime, and two cinnamon sticks. Keep all props subordinate to the dessert. Add only restrained black-ink and watercolour accents around the outer paper area. Use warm natural café daylight and short soft contact shadows.
@@ -57,7 +57,7 @@ Reference map:
 - Use the approved recipe hero as the primary anchor for palette, light, ink weight, watercolour restraint, and material treatment.
 - Use the two poster references only as secondary confirmation of the shared editorial-zine language. Do not copy their layout or decorations.
 
-[Insert the immutable CRK-MIXED-MEDIA-V1 master style block here verbatim.]
+[Insert the immutable RECIPE-NOTES-MIXED-MEDIA-V1 master style block here verbatim.]
 
 Asset family: ingredient spot.
 Create one compact botanical ingredient study: a small sunflower with a short green stem and two leaves, a loose scattering of striped sunflower seeds, and one small shallow bowl of creamy golden sunflower-seed butter. Keep the three elements close enough to read as one editorial spot, with a clean irregular silhouette and generous empty margin. Food and seeds remain believable; the flower and leaves may be slightly more illustrative.
@@ -75,7 +75,7 @@ Reference map:
 - Use the approved recipe hero as the primary anchor for warm light, palette, toasted-food realism, ink contours, and material treatment.
 - Use the poster references only for the stable editorial-zine language. Do not copy their layout, text, arrows, or numbered panels.
 
-[Insert the immutable CRK-MIXED-MEDIA-V1 master style block here verbatim.]
+[Insert the immutable RECIPE-NOTES-MIXED-MEDIA-V1 master style block here verbatim.]
 
 Asset family: step illustration.
 Show the state and tools for toasting sunflower seeds and blending them into seed butter: one small dark frying pan holding lightly golden toasted sunflower seeds beside one compact countertop blender containing smooth pale-golden sunflower-seed butter. Use a simple, immediately legible arrangement with no hand, no before-and-after panels, no arrow, and no step number. Simplify the blender jar into a lightly filled editorial illustration so its edge extracts cleanly; keep the seeds and seed butter tactile and believable.
@@ -96,7 +96,7 @@ Reference map:
 - Image 2 is the approved step-01 illustration and the closest anchor for process-image scale, simplification, clean silhouette, and the balance between realistic food and editorial illustration.
 ```
 
-Every request then included the immutable `CRK-MIXED-MEDIA-V1` master block verbatim, followed by the step-illustration family block from the style guide and one of these exact recipe blocks:
+Every request then included the immutable `RECIPE-NOTES-MIXED-MEDIA-V1` master block verbatim, followed by the step-illustration family block from the style guide and one of these exact recipe blocks:
 
 ### Step 02
 
@@ -186,7 +186,7 @@ Output requirements: one square cutout source on a perfectly flat, uniform, high
 
 ## Layout-Correction Asset Set
 
-The final layout review showed that four small editorial gaps needed purpose-built artwork instead of repeated CSS decoration. Each request used built-in ImageGen, the same reference hierarchy, and the immutable `CRK-MIXED-MEDIA-V1` block. The exact subject and output instructions were:
+The final layout review showed that four small editorial gaps needed purpose-built artwork instead of repeated CSS decoration. Each request used built-in ImageGen, the same reference hierarchy, and the immutable `RECIPE-NOTES-MIXED-MEDIA-V1` block. The exact subject and output instructions were:
 
 ### Slim Sunflower Ingredient Spot
 

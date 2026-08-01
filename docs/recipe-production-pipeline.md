@@ -1,5 +1,7 @@
 # Recipe Production Pipeline
 
+The cultural and editorial decisions behind this workflow are defined in the [editorial charter](editorial-charter.md). Every recipe and asset must satisfy that charter as well as the technical stages below.
+
 The long-term authoring goal is simple: provide one complete recipe draft and turn it into a bilingual, illustrated recipe-zine page with minimal manual assembly. The pipeline below separates deterministic content work from visual generation and editorial judgement so new recipes stay consistent without becoming formulaic.
 
 ## Intended Input
@@ -16,6 +18,8 @@ A useful recipe draft contains:
 - optional character, storage, nutrition, and video notes
 
 Missing factual information must be flagged instead of invented silently.
+
+Do not complete a recipe from convention. A familiar filling, coating, garnish, finish, shaping method, or preparation step remains forbidden unless the source recipe explicitly defines it. When an omission prevents a clear page or illustration, ask for the missing fact rather than borrowing it from a typical version of the dish. German source decisions remain authoritative when producing the English version; quantities, sequence, and deliberate omissions must remain unchanged.
 
 ## Production Stages
 
@@ -48,7 +52,7 @@ Generate each approved step or ingredient asset as an isolated chroma-key source
 
 ### 6. Recompose the Live Page
 
-Connect the final assets through Markdown. Tune scale, overlap, dividers, marker washes, and the responsive sketch layer around the real artwork. The reference poster controls rhythm and editorial density, but the website remains responsive HTML rather than a sliced poster image.
+Connect the final assets through Markdown. Tune scale, overlap, dividers, marker washes, and the responsive sketch layer around the real artwork. Sketch overlays are opt-in per step rather than inferred from the step number. Ordered four-state processes use separate transparent assets, editable arrows on wider screens, and numbered 2 × 2 tiles on narrow screens. The reference poster controls rhythm and editorial density, but the website remains responsive HTML rather than a sliced poster image.
 
 ### 7. Add Optional Modules
 

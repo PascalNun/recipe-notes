@@ -28,7 +28,7 @@ const [creamSection, seedSection, crunchSection, espressoSection, ...additionalS
 		<h2 id="ingredients-title">{title}</h2>
 		<span aria-hidden="true">⌁</span>
 	</div>
-	<div class="ingredients-panel__grid">
+	<div class:list={['ingredients-panel__grid', `ingredients-panel__grid--${Math.min(sections.length, 4)}`]}>
 		{creamSection && (
 			<div class="ingredients-panel__column ingredients-panel__column--cream">
 				<IngredientSection {...creamSection} index={0} />
