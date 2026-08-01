@@ -113,7 +113,13 @@ See [docs/coding-principles.md](docs/coding-principles.md) for the engineering g
 
 ## GitHub and Deployment
 
-The source is maintained in the private `PascalNun/recipe-notes` GitHub repository. The production site is deployed independently at `recipes.pascalnun.eu`. See [docs/deployment.md](docs/deployment.md) for the GitHub and VPS workflow.
+The source is maintained in the public `PascalNun/recipe-notes` GitHub repository. The production site is deployed independently at `recipes.pascalnun.eu`. See [docs/deployment.md](docs/deployment.md) for the GitHub and VPS workflow.
+
+## Rights and Reuse
+
+This repository is public for transparency and personal archival purposes. Unless explicitly stated otherwise, the original source code, recipe texts, editorial content, visual design, illustrations, generated artwork, and reference images in this repository are © 2026 Pascal Nünninghoff. No additional permission for reuse, redistribution, or derivative works is granted beyond GitHub's Terms of Service.
+
+Third-party software and dependencies remain subject to their respective licences.
 
 ## Intentionally Open in Version 1
 
