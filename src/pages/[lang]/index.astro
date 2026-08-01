@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import type { Language } from '../../config/site';
+import { siteConfig, supportedLanguages } from '../../config/site';
+import RecipeIndex from '../../components/RecipeIndex.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+	return supportedLanguages.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+interface Props {
+	lang: Language;
+}
+
+const { lang } = Astro.props;
+const recipes = (await getCollection('recipes')).filter((recipe) => recipe.data.lang === lang);
+const languageLinks = supportedLanguages.map((linkLang) => ({ lang: linkLang, href: `/${linkLang}/` }));
+---
+
+<BaseLayout
+	title={`${siteConfig.name[lang]} — ${siteConfig.tagline[lang]}`}
+	description={siteConfig.intro[lang]}
+	lang={lang}
+	languageLinks={languageLinks}
+	pageClass="page-index"
+>
+	<RecipeIndex lang={lang} recipes={recipes} />
+</BaseLayout>

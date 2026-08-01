@@ -1,0 +1,12 @@
+---
+import InfoBox from './InfoBox.astro';
+
+interface Props {
+	title: string;
+	items: string[];
+}
+
+const { title, items } = Astro.props;
+---
+
+<InfoBox title={title} items={items} tone="oat" icon="⌇" decoration="skyline" />

@@ -1,0 +1,16 @@
+---
+import type { ImageMetadata } from 'astro';
+import AssetImageWithFallback from './AssetImageWithFallback.astro';
+
+interface Props {
+	src: ImageMetadata | 'fallback';
+	alt: string;
+	fallbackLabel: string;
+}
+
+const { src, alt, fallbackLabel } = Astro.props;
+---
+
+<figure class="hero-image">
+	<AssetImageWithFallback src={src} alt={alt} label={fallbackLabel} variant="hero" loading="eager" />
+</figure>

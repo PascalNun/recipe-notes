@@ -1,0 +1,31 @@
+---
+import type { Language } from '../config/site';
+import { getDictionary } from '../i18n';
+
+interface Props {
+	currentLang: Language;
+	links: Array<{ lang: Language; href?: string }>;
+}
+
+const { currentLang, links } = Astro.props;
+const dictionary = getDictionary(currentLang);
+---
+
+<nav class="language-switcher" aria-label={dictionary.language}>
+	{links.map((link) =>
+		link.href ? (
+			<a
+				href={link.href}
+				hreflang={link.lang}
+				lang={link.lang}
+				aria-current={link.lang === currentLang ? 'page' : undefined}
+			>
+				{link.lang.toUpperCase()}
+			</a>
+		) : (
+			<span class="language-switcher__disabled" lang={link.lang} title={dictionary.notAvailable}>
+				{link.lang.toUpperCase()}
+			</span>
+		),
+	)}
+</nav>

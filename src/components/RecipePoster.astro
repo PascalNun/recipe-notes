@@ -1,0 +1,88 @@
+---
+import type { RecipeEntry } from '../lib/recipes';
+import { getDictionary } from '../i18n';
+import CharacterBox from './CharacterBox.astro';
+import ContextBox from './ContextBox.astro';
+import HeroImage from './HeroImage.astro';
+import InfoBox from './InfoBox.astro';
+import IngredientsPanel from './IngredientsPanel.astro';
+import NutritionBox from './NutritionBox.astro';
+import RecipeHeader from './RecipeHeader.astro';
+import RecipeVideo from './RecipeVideo.astro';
+import StepGrid from './StepGrid.astro';
+import StickerNote from './StickerNote.astro';
+
+interface Props {
+	recipe: RecipeEntry;
+}
+
+const { recipe } = Astro.props;
+const { data } = recipe;
+const dictionary = getDictionary(data.lang);
+---
+
+<article class="recipe-poster">
+	<div class="recipe-poster__top">
+		<div class="recipe-poster__hero-column">
+			<RecipeHeader title={data.title} titleLines={data.titleLines} subtitle={data.subtitle} tags={data.tags} />
+			<HeroImage src={data.heroImage} alt={data.heroAlt} fallbackLabel={dictionary.imageFallback} />
+			{data.claim && <StickerNote text={data.claim} tone="sage" />}
+			{data.introNote && <p class="recipe-poster__intro">{data.introNote}</p>}
+		</div>
+		<IngredientsPanel
+			title={dictionary.ingredients}
+			sections={data.ingredientSections}
+			spotImage={data.ingredientSpotImage}
+			spotAlt={data.ingredientSpotAlt}
+			espressoImage={data.ingredientEspressoImage}
+			espressoAlt={data.ingredientEspressoAlt}
+		/>
+	</div>
+
+	<StepGrid
+		title={dictionary.method}
+		finishTitle={dictionary.finish}
+		finish={data.finish}
+		steps={data.steps}
+		fallbackLabel={dictionary.stepFallback}
+	/>
+
+	{data.video && <RecipeVideo {...data.video} />}
+
+	<div class="recipe-poster__notes">
+		{data.characterNotes && (
+			<CharacterBox
+				title={dictionary.character}
+				items={data.characterNotes}
+				artwork={data.characterSpotImage}
+				artworkAlt={data.characterSpotAlt}
+			/>
+		)}
+		{data.contextNotes && <ContextBox title={dictionary.context} items={data.contextNotes} />}
+		{data.healthNotes && (
+			<InfoBox
+				title={dictionary.goodToKnow}
+				items={data.healthNotes}
+				tone="pink"
+				icon="♡"
+				artwork={data.healthSpotImage}
+				artworkAlt={data.healthSpotAlt}
+			/>
+		)}
+		{data.environmentalNotes && (
+			<InfoBox title={dictionary.regionalThought} items={data.environmentalNotes} tone="sage" icon="⌁" />
+		)}
+		{data.nutrition && <NutritionBox title={dictionary.nutrition} items={data.nutrition} />}
+		{data.storage && <InfoBox title={dictionary.storage} text={data.storage} tone="blue" icon="○" />}
+		{data.tips && <InfoBox title={dictionary.tips} items={data.tips} tone="oat" icon="!" />}
+		<aside class="signoff-note" aria-label="Zine note">
+			<i class="signoff-note__tape" aria-hidden="true"></i>
+			<i class="signoff-note__hatch signoff-note__hatch--top" aria-hidden="true"></i>
+			<i class="signoff-note__hatch signoff-note__hatch--bottom" aria-hidden="true"></i>
+			<span>{data.lang === 'de' ? 'Für dich.' : 'For you.'}</span>
+			<span>{data.lang === 'de' ? 'Für mich.' : 'For me.'}</span>
+			<span>{data.lang === 'de' ? 'Für Momente.' : 'For moments.'}</span>
+			<strong aria-hidden="true">♥</strong>
+		</aside>
+	</div>
+</article>

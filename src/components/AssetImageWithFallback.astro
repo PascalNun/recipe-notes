@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+	src?: ImageMetadata | 'fallback';
+	alt: string;
+	label: string;
+	variant?: 'hero' | 'card' | 'step';
+	number?: number;
+	loading?: 'eager' | 'lazy';
+}
+
+const {
+	src,
+	alt,
+	label,
+	variant = 'hero',
+	number,
+	loading = 'lazy',
+} = Astro.props;
+const hasImage = src && src !== 'fallback';
+const deliveryQuality = variant === 'hero' ? 82 : 80;
+---
+
+<div class:list={['asset-image', `asset-image--${variant}`, { 'asset-image--fallback': !hasImage }]}>
+	{hasImage ? (
+		<Image
+			src={src}
+			alt={alt}
+			widths={[480, 720, 1080]}
+			sizes="(max-width: 700px) 100vw, 55vw"
+			quality={deliveryQuality}
+			loading={loading}
+		/>
+	) : (
+		<div class="fallback-art" role="img" aria-label={alt}>
+			{variant === 'step' ? (
+				<>
+					<span class="fallback-art__step-number" aria-hidden="true">{number}</span>
+					<span class="fallback-art__bowl" aria-hidden="true"></span>
+					<span class="fallback-art__sprinkle fallback-art__sprinkle--one" aria-hidden="true"></span>
+					<span class="fallback-art__sprinkle fallback-art__sprinkle--two" aria-hidden="true"></span>
+				</>
+			) : (
+				<>
+					<div class="fallback-art__glass" aria-hidden="true">
+						<span class="fallback-art__cream fallback-art__cream--top"></span>
+						<span class="fallback-art__crunch fallback-art__crunch--top"></span>
+						<span class="fallback-art__cream fallback-art__cream--middle"></span>
+						<span class="fallback-art__crunch fallback-art__crunch--base"></span>
+					</div>
+					<span class="fallback-art__cup" aria-hidden="true"></span>
+					<span class="fallback-art__lime" aria-hidden="true"></span>
+				</>
+			)}
+			<span class="asset-image__label">{label}</span>
+		</div>
+	)}
+</div>

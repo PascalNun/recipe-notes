@@ -1,0 +1,16 @@
+---
+interface Props {
+	title: string;
+	items: string[];
+	index: number;
+}
+
+const { title, items, index } = Astro.props;
+---
+
+<section class:list={['ingredient-section', `ingredient-section--${index + 1}`]}>
+	<h3 class:list={['marker-heading', `marker-heading--${(index % 4) + 1}`]}>{title}</h3>
+	<ul>
+		{items.map((item) => <li>{item}</li>)}
+	</ul>
+</section>

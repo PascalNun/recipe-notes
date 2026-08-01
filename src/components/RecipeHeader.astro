@@ -1,0 +1,25 @@
+---
+interface Props {
+	title: string;
+	titleLines?: string[];
+	subtitle: string;
+	tags: string[];
+}
+
+const { title, titleLines, subtitle, tags } = Astro.props;
+---
+
+<header class="recipe-header">
+	<div class="recipe-header__doodle" aria-hidden="true">///</div>
+	<p class="recipe-header__eyebrow">{tags.join(' · ')}</p>
+	<h1>
+		{
+			titleLines
+				? titleLines.map((line, index) => (
+						<span class:list={{ 'recipe-header__title-accent': index === 1 }}>{line}</span>
+					))
+				: title
+		}
+	</h1>
+	<p class="recipe-header__subtitle">{subtitle}<span aria-hidden="true"> ♡</span></p>
+</header>

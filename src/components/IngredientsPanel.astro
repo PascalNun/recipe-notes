@@ -1,0 +1,85 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import IngredientSection from './IngredientSection.astro';
+
+interface Props {
+	title: string;
+	sections: Array<{ title: string; items: string[] }>;
+	spotImage?: ImageMetadata;
+	spotAlt?: string;
+	espressoImage?: ImageMetadata;
+	espressoAlt?: string;
+}
+
+const {
+	title,
+	sections,
+	spotImage,
+	spotAlt = '',
+	espressoImage,
+	espressoAlt = '',
+} = Astro.props;
+const [creamSection, seedSection, crunchSection, espressoSection, ...additionalSections] = sections;
+---
+
+<section class="ingredients-panel" aria-labelledby="ingredients-title">
+	<div class="section-title section-title--ingredients">
+		<h2 id="ingredients-title">{title}</h2>
+		<span aria-hidden="true">⌁</span>
+	</div>
+	<div class="ingredients-panel__grid">
+		{creamSection && (
+			<div class="ingredients-panel__column ingredients-panel__column--cream">
+				<IngredientSection {...creamSection} index={0} />
+			</div>
+		)}
+		{seedSection && (
+			<div class="ingredients-panel__column ingredients-panel__column--seed">
+				<IngredientSection {...seedSection} index={1} />
+				{spotImage && (
+					<figure class="ingredients-panel__spot">
+						<Image
+							src={spotImage}
+							alt={spotAlt}
+							widths={[320, 480, 640]}
+							sizes="(max-width: 608px) 64vw, 13rem"
+							quality={80}
+							loading="lazy"
+						/>
+						<svg class="ingredients-panel__sketch" viewBox="0 0 260 310" aria-hidden="true">
+							<ellipse cx="38" cy="250" rx="8" ry="3.2" transform="rotate(-22 38 250)" />
+							<ellipse cx="62" cy="269" rx="7" ry="3" transform="rotate(24 62 269)" />
+							<path d="M214 72l13-9M219 86l18-1M213 100l11 8" />
+						</svg>
+					</figure>
+				)}
+			</div>
+		)}
+		{crunchSection && (
+			<div class="ingredients-panel__column ingredients-panel__column--finish">
+				<IngredientSection {...crunchSection} index={2} />
+				<div class="ingredients-panel__espresso-row">
+					{espressoSection && <IngredientSection {...espressoSection} index={3} />}
+					{espressoImage && (
+						<figure class="ingredients-panel__espresso-art">
+							<Image
+								src={espressoImage}
+								alt={espressoAlt}
+								widths={[240, 360, 480]}
+								sizes="(max-width: 608px) 34vw, 7rem"
+								quality={80}
+								loading="lazy"
+							/>
+						</figure>
+					)}
+				</div>
+			</div>
+		)}
+		{additionalSections.map((section, index) => (
+			<div class="ingredients-panel__column ingredients-panel__column--additional">
+				<IngredientSection {...section} index={index + 4} />
+			</div>
+		))}
+	</div>
+</section>

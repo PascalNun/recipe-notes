@@ -1,0 +1,14 @@
+---
+interface Props {
+	text: string;
+	tone?: 'sage' | 'pink' | 'oat' | 'blue';
+}
+
+const { text, tone = 'sage' } = Astro.props;
+---
+
+<aside class:list={['sticker-note', `sticker-note--${tone}`]}>
+	<span class="sticker-note__tape" aria-hidden="true"></span>
+	<p>{text}</p>
+	<span class="sticker-note__heart" aria-hidden="true">♡</span>
+</aside>

@@ -1,0 +1,15 @@
+---
+import type { ImageMetadata } from 'astro';
+import InfoBox from './InfoBox.astro';
+
+interface Props {
+	title: string;
+	items: string[];
+	artwork?: ImageMetadata;
+	artworkAlt?: string;
+}
+
+const { title, items, artwork, artworkAlt } = Astro.props;
+---
+
+<InfoBox title={title} items={items} tone="blue" icon="♡" artwork={artwork} artworkAlt={artworkAlt} />

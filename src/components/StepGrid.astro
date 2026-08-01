@@ -1,0 +1,66 @@
+---
+import type { ImageMetadata } from 'astro';
+import StepCard from './StepCard.astro';
+
+interface Props {
+	title: string;
+	finishTitle: string;
+	finish?: string[];
+	steps: Array<{
+		number: number;
+		title: string;
+		text: string;
+		image?: ImageMetadata | 'fallback';
+		imageAlt?: string;
+		sequenceImages?: {
+			first: ImageMetadata;
+			second: ImageMetadata;
+			third: ImageMetadata;
+			fourth: ImageMetadata;
+		};
+		note?: string;
+	}>;
+	fallbackLabel: string;
+}
+
+const { title, finishTitle, finish, steps, fallbackLabel } = Astro.props;
+---
+
+<section class="method-section" aria-labelledby="method-title">
+	<div class="section-title section-title--method">
+		<span aria-hidden="true">☼</span>
+		<h2 id="method-title">{title}</h2>
+		<span aria-hidden="true">♥</span>
+	</div>
+	<div class="step-grid">
+		{steps.map((step) => <StepCard step={step} fallbackLabel={fallbackLabel} />)}
+		{finish && (
+			<aside class="method-finish">
+				<svg class="method-finish__wash" viewBox="0 0 280 220" preserveAspectRatio="none" aria-hidden="true">
+					<defs>
+						<filter id="finish-watercolour-edge" x="-12%" y="-14%" width="124%" height="128%">
+							<feTurbulence type="fractalNoise" baseFrequency="0.018 0.075" numOctaves="2" seed="17" result="noise" />
+							<feDisplacementMap in="SourceGraphic" in2="noise" scale="9" />
+						</filter>
+					</defs>
+					<path d="M12 18C68 6 126 14 180 9c37-4 69 1 87 13l-4 176c-55 10-105 2-156 8-38 4-73 0-94-10Z" fill="#dce3bd" opacity=".82" filter="url(#finish-watercolour-edge)" />
+					<path d="M25 31c54-9 98 3 146-3 39-5 64 0 79 8l-8 147c-48 7-89-2-131 4-34 5-59 1-76-7Z" fill="#a8b971" opacity=".16" filter="url(#finish-watercolour-edge)" />
+				</svg>
+				<svg class="method-finish__sketch" viewBox="0 0 240 92" aria-hidden="true">
+					<g transform="translate(12 17) rotate(-12 22 16)">
+						<ellipse cx="24" cy="18" rx="14" ry="8" />
+						<path d="M16 13l5 12M24 10l5 16M31 12l4 11M12 14C1 3 0 20 12 21M35 13c10-10 12 7 1 9M9 17H1M40 17h8M38 12l7-6" />
+					</g>
+					<ellipse cx="194" cy="22" rx="8" ry="3.5" transform="rotate(-28 194 22)" />
+					<ellipse cx="213" cy="30" rx="7" ry="3" transform="rotate(18 213 30)" />
+					<ellipse cx="183" cy="39" rx="6" ry="2.8" transform="rotate(29 183 39)" />
+					<path d="M220 12l9-8M224 21l13-1M221 31l10 7" />
+				</svg>
+				<h3>{finishTitle}</h3>
+				<ul>
+					{finish.map((item) => <li>{item}</li>)}
+				</ul>
+			</aside>
+		)}
+	</div>
+</section>

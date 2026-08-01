@@ -1,0 +1,62 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+	title: string;
+	items?: string[];
+	text?: string;
+	tone?: 'sage' | 'pink' | 'oat' | 'blue';
+	icon?: string;
+	decoration?: 'cup' | 'skyline' | 'sprig';
+	artwork?: ImageMetadata;
+	artworkAlt?: string;
+}
+
+const { title, items, text, tone = 'sage', icon = '♡', decoration, artwork, artworkAlt = '' } = Astro.props;
+---
+
+<aside class:list={['info-box', `info-box--${tone}`]}>
+	<header>
+		<h2>{title}</h2>
+		<span aria-hidden="true">{icon}</span>
+	</header>
+	{items && (
+		<ul>
+			{items.map((item) => <li>{item}</li>)}
+		</ul>
+	)}
+	{text && <p>{text}</p>}
+	{artwork && (
+		<figure class="info-box__artwork">
+			<Image
+				src={artwork}
+				alt={artworkAlt}
+				widths={[320, 480, 640]}
+				sizes="(max-width: 608px) 58vw, 11rem"
+				quality={80}
+				loading="lazy"
+			/>
+		</figure>
+	)}
+	{decoration === 'cup' && (
+		<svg class="info-box__decoration info-box__decoration--cup" viewBox="0 0 120 96" aria-hidden="true">
+			<path d="M19 38c1 25 9 39 31 40 24 1 35-12 36-40" />
+			<path d="M19 38c5-8 62-8 67 0-5 9-62 9-67 0Z" />
+			<path d="M86 46c27-5 27 25 2 24M10 81c27 7 68 7 95-1" />
+			<path d="M35 25c-7-8 6-12 0-20M54 25c-7-8 7-12 1-20" />
+		</svg>
+	)}
+	{decoration === 'skyline' && (
+		<svg class="info-box__decoration info-box__decoration--skyline" viewBox="0 0 180 78" aria-hidden="true">
+			<path d="M3 69h174M12 69V55h15v14M31 69V42h17v27M53 69V51h14v18M72 69V33h21v36M98 69V48h16v21M119 69V25h20v44M145 69V45h22v24" />
+			<path d="M78 33l5-9 5 9M126 25v-9M122 19h8M17 60h5M37 49h5M78 42h4M105 55h4M151 53h5" />
+		</svg>
+	)}
+	{decoration === 'sprig' && (
+		<svg class="info-box__decoration info-box__decoration--sprig" viewBox="0 0 100 120" aria-hidden="true">
+			<path d="M48 111C45 78 53 48 75 15" />
+			<path d="M53 82c-19-2-29-11-32-25 15 0 26 8 32 25ZM60 61c17-2 28-11 31-25-15 0-26 8-31 25ZM67 42c-12-5-18-14-17-26 12 4 18 13 17 26Z" />
+		</svg>
+	)}
+</aside>
