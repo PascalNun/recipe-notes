@@ -1,12 +1,14 @@
 # Recipe Notes
 
-A growing bilingual recipe collection built as a static Astro website. The project translates the visual language of a contemporary handmade food zine into an editable, responsive web system: content lives in Markdown, images can be replaced independently, and new recipes do not require a CMS.
+I built Recipe Notes primarily as a personal, growing recipe archive: a place to keep recipes I develop, refine, cook, and want to return to. Publishing the archive as a bilingual website makes it pleasant to browse, simple to share, and straightforward to maintain over time.
+
+The project translates the visual language of a contemporary handmade food zine into an editable, responsive web system. Content lives in Markdown, images can be replaced independently, and new recipes do not require a CMS.
 
 Live site: [recipes.pascalnun.eu](https://recipes.pascalnun.eu)
 
 ## Project Goal
 
-Version 1 deliberately focuses on a durable foundation:
+The primary goal is a durable personal home for recipes rather than a content platform with a complex publishing workflow. Version 1 deliberately focuses on a small, dependable foundation:
 
 - German and English landing pages and recipe detail pages
 - three complete illustrated recipes in both languages
