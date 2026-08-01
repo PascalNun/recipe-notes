@@ -127,6 +127,27 @@ healthNotes:
   - Weiße Bohnen liefern pflanzliches Protein und Ballaststoffe.
   - Sonnenblumenkerne enthalten ungesättigte Fette, Vitamin E und Mineralstoffe.
   - Hafer aus Mitteleuropa ist regional plausibel und nährstoffreich.
+nutrition:
+  basis: Geschätzte Werte für das gesamte Rezept. Berechnet mit den Mittelwerten der angegebenen Mengen; optionale Zutaten sind nicht enthalten.
+  totalLabel: Gesamtes Rezept
+  items:
+    - label: Energie
+      total: 8.690 kJ / 2.080 kcal
+    - label: Fett
+      total: 96,6 g
+    - label: davon gesättigte Fettsäuren
+      total: 8,3 g
+    - label: Kohlenhydrate
+      total: 260,4 g
+    - label: davon Zucker
+      total: 103,5 g
+    - label: Ballaststoffe
+      total: 37,9 g
+    - label: Eiweiß
+      total: 56,1 g
+    - label: Salz
+      total: 2,2 g
+  note: "Berechnungsbasis: 175 g Sojajoghurt, 90 g Sonnenblumenkerne und jeweils die Mitte der angegebenen Mengenbereiche. Marken und tatsächliche Mengen können die Werte verändern."
 ---
 
 Die strukturierte Rezeptfassung steht vollständig im Frontmatter. So bleiben Zutaten, Schritte und Infoboxen auch ohne CMS direkt editierbar.

@@ -72,7 +72,24 @@ Do not add empty fields. The interface renders a box only when the corresponding
 
 Set `draft: true` while recipe facts, translations, or artwork are still awaiting approval. Draft entries are validated by Astro but do not appear on the index and do not generate production recipe routes. The local development server still exposes their direct detail URLs for layout review. Remove the field or set it to `false` only after the editorial and visual approval checks have passed.
 
-`nutrition` is an array of concise values or notes and renders as a collapsed disclosure. Include a basis such as “per serving” in the content and label calculated values as estimates.
+`nutrition` is a structured estimate rendered as a collapsed disclosure. It always includes complete-recipe values and can add a per-serving or per-piece column when the recipe defines a usable yield:
+
+```yaml
+nutrition:
+  basis: Estimated values for 12 pieces; optional ingredients are excluded.
+  totalLabel: Whole recipe
+  servingLabel: Per piece
+  items:
+    - label: Energy
+      total: 6,000 kJ / 1,430 kcal
+      perServing: 500 kJ / 119 kcal
+    - label: Protein
+      total: 42.0 g
+      perServing: 3.5 g
+  note: Brands and actual quantities will change the result.
+```
+
+Omit `servingLabel` and every `perServing` value when no yield has been defined. Keep the calculation assumptions and source references in `docs/nutrition-estimates.md` so the public value remains reproducible.
 
 An optional self-hosted recipe video uses:
 

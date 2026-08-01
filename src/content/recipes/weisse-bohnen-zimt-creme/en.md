@@ -127,6 +127,27 @@ healthNotes:
   - White beans provide plant protein and fibre.
   - Sunflower seeds contain unsaturated fats, vitamin E and minerals.
   - Oats grown in Central Europe are regionally plausible and nutrient-rich.
+nutrition:
+  basis: Estimated values for the complete recipe. Calculated with the midpoint of each stated range; optional ingredients are excluded.
+  totalLabel: Whole recipe
+  items:
+    - label: Energy
+      total: 8,690 kJ / 2,080 kcal
+    - label: Fat
+      total: 96.6 g
+    - label: of which saturates
+      total: 8.3 g
+    - label: Carbohydrate
+      total: 260.4 g
+    - label: of which sugars
+      total: 103.5 g
+    - label: Fibre
+      total: 37.9 g
+    - label: Protein
+      total: 56.1 g
+    - label: Salt
+      total: 2.2 g
+  note: "Calculation basis: 175 g soy yoghurt, 90 g sunflower seeds and the midpoint of each stated quantity range. Brands and actual quantities will change the result."
 ---
 
 The complete recipe is structured in frontmatter so ingredients, steps and notes stay easy to edit without a CMS.

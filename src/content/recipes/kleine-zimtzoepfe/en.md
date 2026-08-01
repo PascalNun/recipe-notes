@@ -81,7 +81,35 @@ contextNotes:
   - practical individual portions
 storage: Small portions freeze well and can be enjoyed one at a time.
 nutrition:
-  - "Estimated guide per piece when making 14 braids: about 220–240 kcal."
+  basis: Estimated values for 14 cinnamon braids. The midpoint of each stated range was used for cinnamon, agave syrup and sugar.
+  totalLabel: Whole recipe
+  servingLabel: Per piece
+  items:
+    - label: Energy
+      total: 13,600 kJ / 3,250 kcal
+      perServing: 970 kJ / 232 kcal
+    - label: Fat
+      total: 72.6 g
+      perServing: 5.2 g
+    - label: of which saturates
+      total: 5.9 g
+      perServing: 0.4 g
+    - label: Carbohydrate
+      total: 576.3 g
+      perServing: 41.2 g
+    - label: of which sugars
+      total: 98.4 g
+      perServing: 7.0 g
+    - label: Fibre
+      total: 22.9 g
+      perServing: 1.6 g
+    - label: Protein
+      total: 66.8 g
+      perServing: 4.8 g
+    - label: Salt
+      total: 6.3 g
+      perServing: 0.45 g
+  note: Optional vanilla, cardamom, extra oat milk and extra oil are not included.
 tips:
   - A lower level of sweetness works well here.
   - Oil instead of margarine keeps the crumb soft.

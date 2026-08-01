@@ -73,7 +73,35 @@ contextNotes:
   - plant-based interpretation
   - contemporary café culture
 nutrition:
-  - "Estimated guide per piece when making 15–20 Kreppel: about 220–320 kcal. The range mainly reflects the final yield and the amount of frying oil absorbed."
+  basis: Estimated values based on 18 Kreppel and an average of 7.5 g absorbed frying oil per piece.
+  totalLabel: Whole recipe
+  servingLabel: Per piece
+  items:
+    - label: Energy
+      total: 19,580 kJ / 4,680 kcal
+      perServing: 1,090 kJ / 260 kcal
+    - label: Fat
+      total: 248.1 g
+      perServing: 13.8 g
+    - label: of which saturates
+      total: 30.4 g
+      perServing: 1.7 g
+    - label: Carbohydrate
+      total: 545.0 g
+      perServing: 30.3 g
+    - label: of which sugars
+      total: 76.6 g
+      perServing: 4.3 g
+    - label: Fibre
+      total: 19.3 g
+      perServing: 1.1 g
+    - label: Protein
+      total: 66.7 g
+      perServing: 3.7 g
+    - label: Salt
+      total: 3.1 g
+      perServing: 0.17 g
+  note: Actual values vary especially with the final yield, the margarine and the amount of frying oil absorbed.
 tips:
   - When small bubbles rise around a wooden skewer dipped into the oil, the oil is hot enough.
 ---

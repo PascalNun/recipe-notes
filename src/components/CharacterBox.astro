@@ -12,4 +12,12 @@ interface Props {
 const { title, items, artwork, artworkAlt } = Astro.props;
 ---
 
-<InfoBox title={title} items={items} tone="blue" icon="♡" artwork={artwork} artworkAlt={artworkAlt} />
+<InfoBox
+	title={title}
+	items={items}
+	tone="blue"
+	icon="♡"
+	artwork={artwork}
+	artworkAlt={artworkAlt}
+	decoration={artwork ? undefined : 'sprig'}
+/>

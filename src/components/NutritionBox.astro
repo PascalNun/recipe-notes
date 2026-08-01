@@ -1,15 +1,49 @@
 ---
 interface Props {
 	title: string;
-	items: string[];
+	nutrition: {
+		basis: string;
+		totalLabel: string;
+		servingLabel?: string;
+		items: Array<{
+			label: string;
+			total: string;
+			perServing?: string;
+		}>;
+		note?: string;
+	};
 }
 
-const { title, items } = Astro.props;
+const { title, nutrition } = Astro.props;
 ---
 
 <details class="nutrition-disclosure">
 	<summary>{title}<span aria-hidden="true">＋</span></summary>
-	<ul>
-		{items.map((item) => <li>{item}</li>)}
-	</ul>
+	<p class="nutrition-disclosure__basis">{nutrition.basis}</p>
+	<div class="nutrition-disclosure__table-wrap">
+		<table>
+			<colgroup>
+				<col class="nutrition-disclosure__nutrient-col" />
+				<col />
+				{nutrition.servingLabel && <col />}
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col"></th>
+					<th scope="col">{nutrition.totalLabel}</th>
+					{nutrition.servingLabel && <th scope="col">{nutrition.servingLabel}</th>}
+				</tr>
+			</thead>
+			<tbody>
+				{nutrition.items.map((item) => (
+					<tr>
+						<th scope="row">{item.label}</th>
+						<td>{item.total}</td>
+						{nutrition.servingLabel && <td>{item.perServing ?? '—'}</td>}
+					</tr>
+				))}
+			</tbody>
+		</table>
+	</div>
+	{nutrition.note && <p class="nutrition-disclosure__note">{nutrition.note}</p>}
 </details>

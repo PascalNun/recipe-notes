@@ -73,7 +73,35 @@ contextNotes:
   - pflanzliche Interpretation
   - zeitgenössische Café-Kultur
 nutrition:
-  - "Geschätzter Richtwert pro Stück bei 15–20 Kreppeln: ca. 220–320 kcal. Die Spanne hängt vor allem von der Stückzahl und der aufgenommenen Frittierölmenge ab."
+  basis: Geschätzte Werte auf Basis von 18 Kreppeln und durchschnittlich 7,5 g aufgenommenem Frittieröl pro Stück.
+  totalLabel: Gesamtes Rezept
+  servingLabel: Pro Stück
+  items:
+    - label: Energie
+      total: 19.580 kJ / 4.680 kcal
+      perServing: 1.090 kJ / 260 kcal
+    - label: Fett
+      total: 248,1 g
+      perServing: 13,8 g
+    - label: davon gesättigte Fettsäuren
+      total: 30,4 g
+      perServing: 1,7 g
+    - label: Kohlenhydrate
+      total: 545,0 g
+      perServing: 30,3 g
+    - label: davon Zucker
+      total: 76,6 g
+      perServing: 4,3 g
+    - label: Ballaststoffe
+      total: 19,3 g
+      perServing: 1,1 g
+    - label: Eiweiß
+      total: 66,7 g
+      perServing: 3,7 g
+    - label: Salz
+      total: 3,1 g
+      perServing: 0,17 g
+  note: Die tatsächlichen Werte schwanken besonders mit der Stückzahl, der Margarine und der beim Frittieren aufgenommenen Ölmenge.
 tips:
   - Steigen am eingetauchten Holzstäbchen kleine Bläschen auf, ist das Öl heiß genug.
 ---

@@ -7,6 +7,18 @@ const ingredientSection = z.object({
 	items: z.array(z.string()).min(1),
 });
 
+const nutritionEstimate = z.object({
+	basis: z.string(),
+	totalLabel: z.string(),
+	servingLabel: z.string().optional(),
+	items: z.array(z.object({
+		label: z.string(),
+		total: z.string(),
+		perServing: z.string().optional(),
+	})).min(1),
+	note: z.string().optional(),
+});
+
 const recipes = defineCollection({
 	loader: glob({ pattern: '**/*.md', base: './src/content/recipes' }),
 	schema: ({ image }) => z.object({
@@ -60,7 +72,7 @@ const recipes = defineCollection({
 		healthNotes: z.array(z.string()).optional(),
 		environmentalNotes: z.array(z.string()).optional(),
 		storage: z.string().optional(),
-		nutrition: z.array(z.string()).optional(),
+		nutrition: nutritionEstimate.optional(),
 		tips: z.array(z.string()).optional(),
 		video: z.object({
 			title: z.string(),

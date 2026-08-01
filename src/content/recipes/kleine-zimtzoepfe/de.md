@@ -81,7 +81,35 @@ contextNotes:
   - alltagstauglich und portionsweise
 storage: Kleine Portionen lassen sich gut einfrieren und portionsweise genießen.
 nutrition:
-  - "Geschätzter Richtwert pro Stück bei 14 Zöpfen: ca. 220–240 kcal."
+  basis: Geschätzte Werte für 14 Zimtzöpfe. Für Zimt, Agavendicksaft und Zucker wurde jeweils die Mitte des angegebenen Mengenbereichs verwendet.
+  totalLabel: Gesamtes Rezept
+  servingLabel: Pro Stück
+  items:
+    - label: Energie
+      total: 13.600 kJ / 3.250 kcal
+      perServing: 970 kJ / 232 kcal
+    - label: Fett
+      total: 72,6 g
+      perServing: 5,2 g
+    - label: davon gesättigte Fettsäuren
+      total: 5,9 g
+      perServing: 0,4 g
+    - label: Kohlenhydrate
+      total: 576,3 g
+      perServing: 41,2 g
+    - label: davon Zucker
+      total: 98,4 g
+      perServing: 7,0 g
+    - label: Ballaststoffe
+      total: 22,9 g
+      perServing: 1,6 g
+    - label: Eiweiß
+      total: 66,8 g
+      perServing: 4,8 g
+    - label: Salz
+      total: 6,3 g
+      perServing: 0,45 g
+  note: Optionale Vanille, Kardamom, zusätzliche Hafermilch und zusätzliches Öl sind nicht eingerechnet.
 tips:
   - Weniger Zucker funktioniert hier gut.
   - Öl statt Margarine sorgt für eine weiche Krume.

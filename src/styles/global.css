@@ -2103,10 +2103,22 @@ h3 {
 
 .info-box__decoration--skyline {
 	right: 0.3rem;
-	bottom: 0.2rem;
+	bottom: -0.1rem;
 	width: calc(100% - 1.4rem);
-	max-height: 4.7rem;
-	stroke-width: 1.6;
+	max-height: 5.6rem;
+	stroke-width: 1.45;
+	transform: rotate(-0.6deg);
+}
+
+.info-box__decoration--skyline .info-box__decoration-wash {
+	fill: var(--color-sage-light);
+	stroke: none;
+	opacity: 0.5;
+}
+
+.info-box__decoration--skyline .info-box__decoration-botanical {
+	fill: rgb(168 185 113 / 20%);
+	stroke-width: 1.8;
 }
 
 .info-box__decoration--sprig {
@@ -2186,7 +2198,9 @@ h3 {
 
 .nutrition-disclosure {
 	position: relative;
+	min-width: 0;
 	padding: 1rem 1.25rem;
+	grid-column: span 2;
 }
 
 .nutrition-disclosure::before {
@@ -2220,10 +2234,59 @@ h3 {
 	transform: rotate(45deg);
 }
 
-.nutrition-disclosure ul {
-	margin: 1rem 0 0;
-	padding-left: 1.2rem;
+.nutrition-disclosure__basis,
+.nutrition-disclosure__note {
+	margin: 0.85rem 0 0;
 	font-size: var(--font-size-sm);
+	line-height: 1.45;
+}
+
+.nutrition-disclosure__table-wrap {
+	overflow-x: auto;
+	margin-top: 0.85rem;
+	padding-bottom: 0.15rem;
+}
+
+.nutrition-disclosure table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: var(--font-size-sm);
+	font-variant-numeric: tabular-nums;
+	table-layout: fixed;
+}
+
+.nutrition-disclosure__nutrient-col {
+	width: 42%;
+}
+
+.nutrition-disclosure th,
+.nutrition-disclosure td {
+	padding: 0.45rem 0.55rem;
+	border-bottom: 1px solid rgb(25 24 20 / 18%);
+	text-align: right;
+	vertical-align: top;
+	overflow-wrap: anywhere;
+}
+
+.nutrition-disclosure th:first-child {
+	padding-left: 0;
+	text-align: left;
+}
+
+.nutrition-disclosure thead th {
+	font-family: var(--font-display);
+	font-size: 0.8em;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.nutrition-disclosure tbody th {
+	font-weight: 650;
+}
+
+.nutrition-disclosure__note {
+	font-family: var(--font-hand);
+	font-size: clamp(0.98rem, 1.2vw, 1.12rem);
 }
 
 .recipe-video {
@@ -2883,6 +2946,19 @@ h3 {
 
 	.recipe-poster__notes {
 		grid-template-columns: 1fr;
+	}
+
+	.nutrition-disclosure {
+		grid-column: auto;
+	}
+
+	.nutrition-disclosure th,
+	.nutrition-disclosure td {
+		padding-inline: 0.25rem;
+	}
+
+	.nutrition-disclosure thead th {
+		font-size: 0.72em;
 	}
 
 	.method-finish {
