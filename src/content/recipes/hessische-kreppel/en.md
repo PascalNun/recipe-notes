@@ -10,7 +10,9 @@ subtitle: Airy yeast dough, fried until golden
 slug: hessian-kreppel
 description: Light vegan Kreppel made from soft yeast dough, shaped individually and fried until golden.
 tags:
-  - Yeast pastry
+  - Yeast dough
+  - Sweet
+  - Fried
   - Plant-based
   - Hessian roots
 yieldText: about 15–20 pieces

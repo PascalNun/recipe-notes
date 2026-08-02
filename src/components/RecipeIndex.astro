@@ -15,7 +15,16 @@ const { lang, recipes } = Astro.props;
 const dictionary = getDictionary(lang);
 const featuredRecipe = recipes[0];
 const titleLines = siteConfig.displayNameLines[lang];
-const tags = [...new Set(recipes.flatMap((recipe) => recipe.data.tags))].sort((first, second) => first.localeCompare(second, lang));
+const tagCounts = new Map<string, number>();
+
+recipes.forEach((recipe) => {
+	recipe.data.tags.forEach((tag) => tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1));
+});
+
+const tags = [...tagCounts.entries()]
+	.filter(([, count]) => count > 1 && count < recipes.length)
+	.map(([tag]) => tag)
+	.sort((first, second) => first.localeCompare(second, lang));
 ---
 
 <div class="index-page">

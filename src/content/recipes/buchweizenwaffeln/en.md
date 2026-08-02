@@ -16,6 +16,7 @@ tags:
   - Gluten-free
   - Breakfast
   - Sweet
+  - Cinnamon
 yieldText: about 7 waffles
 timeItems:
   - label: Active preparation

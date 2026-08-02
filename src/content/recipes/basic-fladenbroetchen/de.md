@@ -12,7 +12,6 @@ description: Ein unkompliziertes Grundrezept für weiche, luftige Fladenbrötche
 tags:
   - Hefeteig
   - Brot
-  - Brötchen
   - Pflanzlich
   - Basisrezept
 yieldText: 10 Fladenbrötchen

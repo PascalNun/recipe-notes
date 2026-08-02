@@ -16,6 +16,7 @@ tags:
   - Glutenfrei
   - Frühstück
   - Süß
+  - Zimt
 yieldText: ca. 7 Waffeln
 timeItems:
   - label: Aktive Vorbereitung

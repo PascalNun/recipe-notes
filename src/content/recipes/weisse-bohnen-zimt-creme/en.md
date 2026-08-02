@@ -12,7 +12,9 @@ description: A modern plant-based dessert built around a silky white bean cream,
 tags:
   - Dessert
   - Plant-based
-  - Regionally inspired
+  - Beans
+  - Sweet
+  - Cinnamon
 heroImage: ./assets/hero-cutout-v3.webp
 heroAlt: A layered dessert of pale white bean cinnamon cream and oat crunch beside a small cup of espresso
 ingredientSpotImage: ./assets/ingredient-sunflower-v2.webp

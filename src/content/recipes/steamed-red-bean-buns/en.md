@@ -13,8 +13,9 @@ tags:
   - Plant-based
   - Steamed
   - Yeast dough
-  - Azuki beans
-  - Asian
+  - Beans
+  - Sweet
+  - Asian-inspired
 yieldText: 8 buns
 timeItems:
   - label: Preparation

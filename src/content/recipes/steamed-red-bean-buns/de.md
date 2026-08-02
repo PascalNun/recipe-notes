@@ -13,8 +13,9 @@ tags:
   - Pflanzlich
   - Gedämpft
   - Hefeteig
-  - Azukibohnen
-  - Asiatisch
+  - Bohnen
+  - Süß
+  - Asiatisch inspiriert
 yieldText: 8 Buns
 timeItems:
   - label: Vorbereitung

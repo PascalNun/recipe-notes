@@ -41,6 +41,12 @@ src/content/recipes/white-bean-cinnamon-cream/
 
 An ingredient section contains `title` and `items`. A step requires `number`, `title`, and `text`; `image`, `imageAlt`, `note`, and `sketch` are optional. `sketch` selects one of the deliberately recipe-specific responsive line overlays: `toast`, `rinse`, `chill`, `mix`, `bake`, or `espresso`. Omit it when the generated artwork already contains the necessary marks or when no overlay belongs to that action.
 
+## Tag and Filter Rules
+
+Tags describe a recipe and make its index card searchable. Use a stable, language-specific vocabulary and prefer broader connections such as `Yeast dough`, `Beans`, or `Cinnamon` over near-duplicates that differ only by recipe type.
+
+The filter bar deliberately shows only tags used by at least two recipes. A tag used by every recipe is hidden as redundant. This lets recipes retain useful specific tags such as `Fried` or `Gluten-free` without turning every one-off detail into a filter. Revisit the vocabulary whenever a new recipe makes a previously specific tag into a meaningful route through the collection.
+
 A process that genuinely needs four ordered visual states can use separate `sequenceImages` instead of one wide raster composite:
 
 ```yaml

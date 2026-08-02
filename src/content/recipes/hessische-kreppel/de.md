@@ -10,7 +10,9 @@ subtitle: Luftiger Hefeteig, goldbraun frittiert
 slug: hessische-kreppel
 description: Luftige vegane Kreppel aus weichem Hefeteig, portionsweise geformt und goldbraun frittiert.
 tags:
-  - Hefegebäck
+  - Hefeteig
+  - Süß
+  - Frittiert
   - Pflanzlich
   - Hessisch
 yieldText: ca. 15–20 Stück

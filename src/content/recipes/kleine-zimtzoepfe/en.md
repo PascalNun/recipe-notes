@@ -10,8 +10,9 @@ subtitle: Airy yeast dough with cinnamon filling
 slug: small-cinnamon-braids
 description: Small plant-based cinnamon braids made from soft yeast dough with agave syrup, cinnamon and a tender crumb.
 tags:
-  - Yeast pastry
+  - Yeast dough
   - Plant-based
+  - Sweet
   - Cinnamon
 yieldText: 14 small cinnamon braids
 timeItems:

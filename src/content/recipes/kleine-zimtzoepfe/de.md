@@ -10,8 +10,9 @@ subtitle: Luftiger Hefeteig mit Zimtfüllung
 slug: kleine-zimtzoepfe
 description: Kleine pflanzliche Zimtzöpfe aus weichem Hefeteig mit Agavendicksaft, Zimt und einer saftigen Krume.
 tags:
-  - Hefegebäck
+  - Hefeteig
   - Pflanzlich
+  - Süß
   - Zimt
 yieldText: 14 kleine Zimtzöpfe
 timeItems:

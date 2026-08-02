@@ -12,7 +12,9 @@ description: Ein modernes, pflanzliches Dessert mit cremiger Bohnenbasis, nussig
 tags:
   - Dessert
   - Pflanzlich
-  - Regional gedacht
+  - Bohnen
+  - Süß
+  - Zimt
 heroImage: ./assets/hero-cutout-v3.webp
 heroAlt: Geschichtetes Dessert aus heller Bohnen-Zimt-Creme und Hafer-Crunch neben einer kleinen Tasse Espresso
 ingredientSpotImage: ./assets/ingredient-sunflower-v2.webp

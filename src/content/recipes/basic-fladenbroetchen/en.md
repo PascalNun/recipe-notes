@@ -12,7 +12,6 @@ description: A straightforward basic recipe for soft, airy flatbread rolls made 
 tags:
   - Yeast dough
   - Bread
-  - Rolls
   - Plant-based
   - Basic recipe
 yieldText: 10 flatbread rolls
