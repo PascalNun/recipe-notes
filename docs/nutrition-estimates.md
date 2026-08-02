@@ -2,6 +2,10 @@
 
 Nutrition values are optional editorial estimates. They are not laboratory analyses and must not be presented as exact when ingredient brands, finished weights, or frying absorption are unknown.
 
+### Source direction
+
+The current estimates use USDA FoodData Central records so their calculations remain reproducible. A future maintenance pass should migrate the complete collection together to the EFSA Open Access European Food Composition Database once its machine-readable workflow has been evaluated. Do not mix sources silently between recipes. The German Bundeslebensmittelschlüssel is not the default for this public repository because reuse and publication require separate licensing.
+
 The public disclosure includes energy, fat, saturates, carbohydrate, sugars, fibre, protein, and salt for the complete recipe. A per-piece column is added only when the recipe defines a usable yield.
 
 ## Shared Method
@@ -92,27 +96,27 @@ The defined yield is **14 braids**. Midpoints are used for the filling: 2.5 tsp 
 | --- | ---: |
 | all-purpose flour | 600 g |
 | oat milk | 250 g |
-| canola oil | 60 g |
+| salted 80% fat margarine | 75 g |
 | granulated sugar | 48.75 g total |
 | active dry yeast | 7 g |
 | ground cinnamon | 6.5 g |
 | agave syrup | 63 g |
 | added salt | 6 g |
 
-Optional vanilla, cardamom, additional oat milk, and additional oil are excluded.
+Optional vanilla, cardamom, additional oat milk, and additional oil are excluded. Margarine brands vary considerably; this estimate uses the same representative salted 80% fat record as the Kreppel calculation.
 
 ### Published estimate
 
 | Nutrient | Complete recipe | Per braid at 14 pieces |
 | --- | ---: | ---: |
-| energy | 13,600 kJ / 3,250 kcal | 970 kJ / 232 kcal |
-| fat | 72.6 g | 5.2 g |
-| saturates | 5.9 g | 0.4 g |
-| carbohydrate | 576.3 g | 41.2 g |
+| energy | 13,600 kJ / 3,260 kcal | 970 kJ / 233 kcal |
+| fat | 73.1 g | 5.2 g |
+| saturates | 12.9 g | 0.9 g |
+| carbohydrate | 576.8 g | 41.2 g |
 | sugars | 98.4 g | 7.0 g |
 | fibre | 22.9 g | 1.6 g |
-| protein | 66.8 g | 4.8 g |
-| salt | 6.3 g | 0.45 g |
+| protein | 66.9 g | 4.8 g |
+| salt | 7.7 g | 0.55 g |
 
 ## Steamed Red Bean Buns
 

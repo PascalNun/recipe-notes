@@ -35,7 +35,7 @@ ingredientSections:
     items:
       - 600 g Mehl
       - 250 ml Hafermilch
-      - 60 g neutrales Öl
+      - 75 g weiche Margarine (ca. 80 % Fett)
       - 30 g Zucker
       - etwas flüssiges Stevia
       - 1 Päckchen Trockenhefe
@@ -52,7 +52,7 @@ ingredientSections:
 steps:
   - number: 1
     title: Hefeteig zubereiten
-    text: Die Hafermilch leicht erwärmen und mit Zucker, Stevia und Trockenhefe verrühren. Mehl und Salz in eine große Schüssel geben, Flüssigkeit und Öl hinzufügen und mehrere Minuten zu einem glatten Teig kneten.
+    text: Die Hafermilch leicht erwärmen und mit Zucker, Stevia und Trockenhefe verrühren. Mehl und Salz in eine große Schüssel geben, die Flüssigkeit und die weiche Margarine in kleinen Stücken hinzufügen und mehrere Minuten zu einem glatten Teig kneten.
     note: Abdecken und meist etwa 60–90 Minuten gehen lassen, bis sich das Teigvolumen ungefähr verdoppelt hat.
     image: ./assets/step-01.webp
     imageAlt: Glatter aufgegangener Hefeteig in einer gesprenkelten Keramikschüssel
@@ -87,16 +87,16 @@ nutrition:
   servingLabel: Pro Stück
   items:
     - label: Energie
-      total: 13.600 kJ / 3.250 kcal
-      perServing: 970 kJ / 232 kcal
+      total: 13.600 kJ / 3.260 kcal
+      perServing: 970 kJ / 233 kcal
     - label: Fett
-      total: 72,6 g
+      total: 73,1 g
       perServing: 5,2 g
     - label: davon gesättigte Fettsäuren
-      total: 5,9 g
-      perServing: 0,4 g
+      total: 12,9 g
+      perServing: 0,9 g
     - label: Kohlenhydrate
-      total: 576,3 g
+      total: 576,8 g
       perServing: 41,2 g
     - label: davon Zucker
       total: 98,4 g
@@ -105,13 +105,13 @@ nutrition:
       total: 22,9 g
       perServing: 1,6 g
     - label: Eiweiß
-      total: 66,8 g
+      total: 66,9 g
       perServing: 4,8 g
     - label: Salz
-      total: 6,3 g
-      perServing: 0,45 g
-  note: Optionale Vanille, Kardamom, zusätzliche Hafermilch und zusätzliches Öl sind nicht eingerechnet.
+      total: 7,7 g
+      perServing: 0,55 g
+  note: Berechnet mit 75 g gesalzener Margarine mit etwa 80 % Fett. Marke und Salzgehalt der Margarine können die Werte verändern. Optionale Vanille, Kardamom, zusätzliche Hafermilch und zusätzliches Öl sind nicht eingerechnet.
 tips:
   - Weniger Zucker funktioniert hier gut.
-  - Öl statt Margarine sorgt für eine weiche Krume.
+  - Die Margarine vor dem Kneten weich werden lassen, damit sie sich gleichmäßig in den Teig einarbeiten lässt.
 ---

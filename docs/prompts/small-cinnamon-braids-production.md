@@ -16,7 +16,7 @@ This note records the approved braid geometry, cinnamon quantity, and yield and 
 
 ```text
 Required subject: small vegan cinnamon braids made from soft yeast dough with an agave, cinnamon, and sugar filling.
-Allowed edible ingredients: flour, oat milk, neutral oil, sugar, liquid stevia, dried yeast, salt, cinnamon, agave syrup, optional vanilla, optional cardamom, optional small amounts of oat milk and neutral oil in the filling.
+Allowed edible ingredients: flour, oat milk, margarine with about 80% fat, sugar, liquid stevia, dried yeast, salt, cinnamon, agave syrup, optional vanilla, optional cardamom, and optional small amounts of oat milk and neutral oil in the filling.
 Allowed tools: plain mixing bowl, rolling pin, dough scraper or knife, baking tray, baking paper, pastry brush.
 Required preparation states: smooth risen dough; rectangular rolled dough with agave, cinnamon, and sugar; shaped small braids; lightly golden baked braids with a tender crumb.
 Required shape: each of 14 portions is divided lengthways into three strands that remain connected at the top, plaited into one small three-strand braid, then lightly pinched and tucked at the end. The filling is applied before dividing and braiding.
@@ -27,6 +27,7 @@ Forbidden additions: butter, dairy milk, eggs, pearl sugar, icing, nuts, chocola
 ## Approved Editorial Decisions
 
 - One batch makes exactly 14 small braids.
+- The yeast dough uses 75 g softened margarine with about 80% fat; neutral oil is not the standard dough fat.
 - The filling uses approximately 2–3 tsp cinnamon, according to desired intensity.
 - The filling is applied across the rectangular dough before it is divided into 14 portions.
 - Every portion becomes one small, clearly legible three-strand plait; it must not resemble a cinnamon roll or spiral bun.

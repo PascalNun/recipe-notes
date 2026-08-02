@@ -35,7 +35,7 @@ ingredientSections:
     items:
       - 600 g flour
       - 250 ml oat milk
-      - 60 g neutral oil
+      - 75 g softened margarine (about 80% fat)
       - 30 g sugar
       - a little liquid stevia
       - 1 sachet dried yeast
@@ -52,7 +52,7 @@ ingredientSections:
 steps:
   - number: 1
     title: Make the yeast dough
-    text: Warm the oat milk gently and stir in the sugar, stevia and dried yeast. Place the flour and salt in a large bowl, add the liquid and oil, then knead for several minutes to form a smooth dough.
+    text: Warm the oat milk gently and stir in the sugar, stevia and dried yeast. Place the flour and salt in a large bowl, add the liquid and the softened margarine in small pieces, then knead for several minutes to form a smooth dough.
     note: Cover and leave to rise, usually for about 60–90 minutes, until the dough has roughly doubled in volume.
     image: ./assets/step-01.webp
     imageAlt: Smooth risen yeast dough in a speckled ceramic bowl
@@ -87,16 +87,16 @@ nutrition:
   servingLabel: Per piece
   items:
     - label: Energy
-      total: 13,600 kJ / 3,250 kcal
-      perServing: 970 kJ / 232 kcal
+      total: 13,600 kJ / 3,260 kcal
+      perServing: 970 kJ / 233 kcal
     - label: Fat
-      total: 72.6 g
+      total: 73.1 g
       perServing: 5.2 g
     - label: of which saturates
-      total: 5.9 g
-      perServing: 0.4 g
+      total: 12.9 g
+      perServing: 0.9 g
     - label: Carbohydrate
-      total: 576.3 g
+      total: 576.8 g
       perServing: 41.2 g
     - label: of which sugars
       total: 98.4 g
@@ -105,13 +105,13 @@ nutrition:
       total: 22.9 g
       perServing: 1.6 g
     - label: Protein
-      total: 66.8 g
+      total: 66.9 g
       perServing: 4.8 g
     - label: Salt
-      total: 6.3 g
-      perServing: 0.45 g
-  note: Optional vanilla, cardamom, extra oat milk and extra oil are not included.
+      total: 7.7 g
+      perServing: 0.55 g
+  note: Calculated with 75 g salted margarine at about 80% fat. The brand and salt content of the margarine can change the values. Optional vanilla, cardamom, extra oat milk and extra oil are not included.
 tips:
   - A lower level of sweetness works well here.
-  - Oil instead of margarine keeps the crumb soft.
+  - Let the margarine soften before kneading so it incorporates evenly into the dough.
 ---
