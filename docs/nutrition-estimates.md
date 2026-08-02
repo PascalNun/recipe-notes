@@ -142,6 +142,62 @@ The defined yield is **8 buns**. The calculation uses the dry weight of the azuk
 | protein | 42.6 g | 5.3 g |
 | salt | 2.0 g | 0.25 g |
 
+## Basic Flatbread Rolls
+
+The defined yield is **10 flatbread rolls**. Water is nutritionally negligible, and all optional spices are excluded.
+
+### Calculation basis
+
+| Ingredient | Amount used |
+| --- | ---: |
+| all-purpose wheat flour | 750 g |
+| active dry yeast | 7 g |
+| added salt | 10 g |
+
+### Published estimate
+
+| Nutrient | Complete recipe | Per roll at 10 rolls |
+| --- | ---: | ---: |
+| energy | 11,520 kJ / 2,750 kcal | 1,150 kJ / 275 kcal |
+| fat | 7.9 g | 0.8 g |
+| saturates | 1.2 g | 0.1 g |
+| carbohydrate | 575.2 g | 57.5 g |
+| sugars | 2.0 g | 0.2 g |
+| fibre | 22.1 g | 2.2 g |
+| protein | 80.3 g | 8.0 g |
+| salt | 10.0 g | 1.0 g |
+
+## Buckwheat Waffles
+
+The defined calculation yield is **7 waffles**. Midpoints are used for the chia range: 2.5 tsp chia seeds, approximated as 10 g, with 10 tsp water. One half packet of baking powder is treated as 8 g. Unsweetened plain soy drink is the standard plant-drink assumption. Water is nutritionally negligible, and optional greasing fat is excluded.
+
+### Calculation basis
+
+| Ingredient | Amount used |
+| --- | ---: |
+| whole-groat buckwheat flour | 200 g |
+| dry chia seeds | 10 g |
+| coconut oil | 50 g |
+| granulated sugar | 60 g |
+| cornstarch | 50 g |
+| unsweetened plain soy drink | 250 g |
+| baking powder | 8 g |
+| ground cinnamon | 1.3 g |
+| cider vinegar | 5 g |
+
+### Published estimate
+
+| Nutrient | Complete recipe | Per waffle at 7 waffles |
+| --- | ---: | ---: |
+| energy | 7,080 kJ / 1,690 kcal | 1,010 kJ / 242 kcal |
+| fat | 64.2 g | 9.2 g |
+| saturates | 43.7 g | 6.2 g |
+| carbohydrate | 257.3 g | 36.8 g |
+| sugars | 66.5 g | 9.5 g |
+| fibre | 24.6 g | 3.5 g |
+| protein | 36.0 g | 5.1 g |
+| salt | 1.87 g | 0.27 g |
+
 ## FoodData Central References
 
 - Cannellini beans, canned, drained and rinsed: [FDC 2644287](https://fdc.nal.usda.gov/food-details/2644287/nutrients)
@@ -160,5 +216,11 @@ The defined yield is **8 buns**. The calculation uses the dry weight of the azuk
 - Baking powder: [FDC 172804](https://fdc.nal.usda.gov/food-details/172804/nutrients)
 - Espresso: [FDC 171891](https://fdc.nal.usda.gov/food-details/171891/nutrients)
 - Dry azuki beans: [FDC 173727](https://fdc.nal.usda.gov/food-details/173727/nutrients)
+- Buckwheat flour, whole-groat: [FDC 170687](https://fdc.nal.usda.gov/food-details/170687/nutrients)
+- Dry chia seeds: [FDC 170554](https://fdc.nal.usda.gov/food-details/170554/nutrients)
+- Coconut oil: [FDC 171412](https://fdc.nal.usda.gov/food-details/171412/nutrients)
+- Cornstarch: [FDC 169698](https://fdc.nal.usda.gov/food-details/169698/nutrients)
+- Unsweetened plain soy milk: [FDC 1750337](https://fdc.nal.usda.gov/food-details/1750337/nutrients)
+- Cider vinegar: [FDC 173469](https://fdc.nal.usda.gov/food-details/173469/nutrients)
 
 Product labels should replace database references whenever a recipe is tested with fixed commercial products.

@@ -23,7 +23,7 @@ Forbidden additions: sesame, scallions, flowers, berries, jam, powdered sugar, g
 - Hands are excluded from the final step series to preserve the established object-and-state illustration language.
 - The dough step uses an unbranded dark stand mixer as a neutral tool illustration; the recipe text does not require this appliance.
 - Shaping uses four separate transparent states so responsive HTML and SVG arrows can reflow without crossing the artwork.
-- The steaming step shows one bamboo basket above hot water in a wide dark wok. A second stacked basket was deliberately omitted because it would imply unnecessary equipment or a second tier for this eight-bun batch.
+- The steaming step shows one bamboo basket clearly raised above a shallow ring of simmering water in a wide dark wok. A second stacked basket was deliberately omitted because it would imply unnecessary equipment or a second tier for this eight-bun batch. Semi-transparent steam was omitted after it produced an unreliable chroma-key edge; the visible water, bubbles, and ink motion lines communicate heat without damaging the alpha matte.
 
 ## Asset manifest and ImageGen sources
 
@@ -38,6 +38,6 @@ Forbidden additions: sesame, scallions, flowers, berries, jam, powdered sugar, g
 | `step-04-stage-2.webp` | smooth paste centred on the wrapper | `exec-e2fabc02-9976-423a-b22a-26c81a8fce91.png` |
 | `step-04-stage-3.webp` | gathered and sealed pleated crown | `exec-b3107447-e3e4-462c-91bc-0c686102dcb9.png` |
 | `step-04-stage-4.webp` | smooth seam-side-down bun on baking paper | `exec-0d03a5b5-fb53-4651-b2ba-fb66d73f52f3.png` |
-| `step-05.webp` | bamboo basket above hot water in a wide wok | `exec-30f18e5e-590b-4275-b804-31b647238382.png` |
+| `step-05.webp` | bamboo basket raised above visible simmering water in a wide wok | `exec-ffc02920-118d-44dd-91d3-8d6301a1669b.png` |
 
-The hero and primary support assets were generated against an explicit `#ff00ff` chroma key. Final website assets use transparent lossless WebP. Red-heavy azuki artwork uses a tighter hard key and a restrained neutral edge correction because a broad magenta despill would desaturate the actual beans and paste. Local keyed and alpha working files remain under `tmp/imagegen/steamed-red-bean-buns/` and are excluded from version control.
+The hero and primary support assets were generated against an explicit `#ff00ff` chroma key. Final website assets use transparent lossless WebP. Red-heavy azuki artwork uses a tighter hard key and a restrained neutral edge correction because a broad magenta despill would desaturate the actual beans and paste. Selected full-resolution keyed sources and approved alpha masters remain under `local-assets/masters/steamed-red-bean-buns/` and are excluded from version control.

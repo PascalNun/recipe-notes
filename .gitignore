@@ -15,6 +15,10 @@ pnpm-debug.log*
 # local asset-production intermediates
 tmp/
 
+# durable local production masters; keep only the directory guide in Git
+local-assets/*
+!local-assets/README.md
+
 
 # environment variables
 .env

@@ -43,7 +43,9 @@ public/assets/global/
 
 Examples include paper textures, photographed tape, or hand-drawn arrows. Version 1 creates most decoration with CSS; the global folder is prepared for final assets later.
 
-Local production masters and chroma-key intermediates live under `tmp/asset-masters/`. The entire `tmp/` directory is ignored by Git and is not copied into the built website.
+Durable local production masters live under `local-assets/masters/`. Active keyed files and alpha-processing variants live under `local-assets/working/`, and contact sheets or review exports live under `local-assets/previews/`. The contents of `local-assets/` stay outside version control except for its short directory guide.
+
+The `tmp/` directory is reserved for disposable build, conversion, and QA output. A file that would be expensive or impossible to reproduce must not exist only in `tmp/`. Neither local production directory is copied into the built website.
 
 ## 4. Referencing Images in Markdown
 
