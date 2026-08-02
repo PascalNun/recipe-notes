@@ -13,7 +13,7 @@ Live site: [recipes.pascalnun.eu](https://recipes.pascalnun.eu)
 The primary goal is a durable personal home for recipes rather than a content platform with a complex publishing workflow. Longevity matters more than feature breadth, so version 1 deliberately focuses on a small, dependable foundation:
 
 - German and English landing pages and recipe detail pages
-- three complete illustrated recipes in both languages
+- four complete illustrated recipes in both languages
 - lightweight title, ingredient, keyword, and tag filtering on the landing page
 - a validated Astro Content Collection
 - responsive poster, ingredient, step, and note layouts
@@ -99,6 +99,8 @@ The authoritative visual rules live in [docs/asset-style-guide.md](docs/asset-st
 The project-wide cultural position is defined in the [editorial charter](docs/editorial-charter.md): contemporary regional plant-based cooking, warm but never nostalgic, with regional ingredients treated as a starting point for open and internationally informed combinations.
 
 The completed production records for the additional recipes live in [the Hessian Kreppel brief](docs/prompts/hessian-kreppel-production.md) and [the small cinnamon braids brief](docs/prompts/small-cinnamon-braids-production.md). They preserve the factual locks, approved hero direction, supporting asset sources, and transparent WebP workflow for future recipe production.
+
+The [steamed red bean buns production record](docs/prompts/steamed-red-bean-buns-production.md) extends the same system with an unbranded dough-mixing illustration, a four-state shaping sequence, and a bamboo-steamer-over-wok setup.
 
 ## Design Principles
 

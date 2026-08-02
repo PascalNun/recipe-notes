@@ -114,6 +114,34 @@ Optional vanilla, cardamom, additional oat milk, and additional oil are excluded
 | protein | 66.8 g | 4.8 g |
 | salt | 6.3 g | 0.45 g |
 
+## Steamed Red Bean Buns
+
+The defined yield is **8 buns**. The calculation uses the dry weight of the azuki beans and includes both 30 g agave-syrup quantities. Water is nutritionally negligible, and the optional additional pinch of salt is excluded.
+
+### Calculation basis
+
+| Ingredient | Amount used |
+| --- | ---: |
+| all-purpose wheat flour | 300 g |
+| agave syrup | 60 g total |
+| canola oil | 6 g |
+| active dry yeast | 4 g |
+| dry azuki beans | 50 g |
+| added salt | 2 g |
+
+### Published estimate
+
+| Nutrient | Complete recipe | Per bun at 8 buns |
+| --- | ---: | ---: |
+| energy | 6,310 kJ / 1,510 kcal | 790 kJ / 189 kcal |
+| fat | 9.8 g | 1.2 g |
+| saturates | 1.0 g | 0.1 g |
+| carbohydrate | 307.9 g | 38.5 g |
+| sugars | 41.6 g | 5.2 g |
+| fibre | 15.6 g | 2.0 g |
+| protein | 42.6 g | 5.3 g |
+| salt | 2.0 g | 0.25 g |
+
 ## FoodData Central References
 
 - Cannellini beans, canned, drained and rinsed: [FDC 2644287](https://fdc.nal.usda.gov/food-details/2644287/nutrients)
@@ -131,5 +159,6 @@ Optional vanilla, cardamom, additional oat milk, and additional oil are excluded
 - Lime juice: [FDC 168156](https://fdc.nal.usda.gov/food-details/168156/nutrients)
 - Baking powder: [FDC 172804](https://fdc.nal.usda.gov/food-details/172804/nutrients)
 - Espresso: [FDC 171891](https://fdc.nal.usda.gov/food-details/171891/nutrients)
+- Dry azuki beans: [FDC 173727](https://fdc.nal.usda.gov/food-details/173727/nutrients)
 
 Product labels should replace database references whenever a recipe is tested with fixed commercial products.

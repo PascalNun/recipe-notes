@@ -2424,6 +2424,14 @@ h3 {
 		grid-template-columns: repeat(5, minmax(0, 1fr));
 	}
 
+	.step-grid--5:has(.step-card--sequence) {
+		grid-template-columns: repeat(6, minmax(0, 1fr));
+	}
+
+	.step-grid--5:has(.step-card--sequence) .step-card--sequence {
+		grid-column: span 2;
+	}
+
 	.step-grid--3 {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
@@ -2483,6 +2491,12 @@ h3 {
 	.step-card--wide .step-card__note {
 		grid-column: 1 / -1;
 		grid-row: 4;
+	}
+}
+
+@media (min-width: 38.001rem) {
+	.ingredients-panel__grid--2 .ingredients-panel__spot {
+		margin: 1.5rem auto auto;
 	}
 }
 
