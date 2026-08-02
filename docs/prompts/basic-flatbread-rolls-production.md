@@ -12,7 +12,7 @@ This record preserves the recipe-specific factual lock, reuse decision, and gene
 Required subject: ten soft, relatively flat wheat rolls with a lightly browned surface and airy crumb.
 Allowed edible ingredients: wheat flour, water, dried yeast, salt, and optional turmeric, paprika, garlic powder, rosemary, thyme, or Italian herbs.
 Allowed tools: mixing bowl or unbranded stand mixer with dough hook, work surface, bench scraper, baking tray, baking paper, cooling rack, and cloth.
-Required preparation states: soft slightly sticky dough; ten divided portions; ten pale proofed rounds; lightly golden finished rolls.
+Required preparation states: soft slightly sticky dough; ten divided portions; ten pale risen rounds; lightly golden finished rolls.
 Forbidden additions: seeds, toppings, dips, sandwich fillings, butter, cheese, vegetables, fruit, glaze, and unrelated garnish.
 ```
 
@@ -21,7 +21,7 @@ Forbidden additions: seeds, toppings, dips, sandwich fillings, butter, cheese, v
 - The hero uses a loose cooling-rack composition with one opened roll so the soft irregular crumb is legible.
 - The dough step deliberately reuses the approved unbranded black stand-mixer illustration from Steamed Red Bean Buns. The text continues to make hand kneading equally valid.
 - The shaping image contains ten countable pieces: four rough portions and six formed rounds.
-- The second proof uses a deliberately simple two-by-five arrangement. Earlier generated variants repeatedly reduced the batch to eight; the approved source shows all ten without a cloth obstructing the count.
+- The second rise uses a deliberately simple two-by-five arrangement. Earlier generated variants repeatedly reduced the batch to eight; the approved source shows all ten without a cloth obstructing the count.
 - No optional spice is visibly applied to the surface, so the series remains accurate for every seasoning variation.
 
 ## Asset manifest and ImageGen sources

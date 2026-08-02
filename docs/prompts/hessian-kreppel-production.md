@@ -22,13 +22,13 @@ Allowed edible ingredients: flour, margarine, sugar, yeast, oat milk, salt, and 
 Allowed tools: plain mixing bowl, measuring jug, dough scraper, rolling pin, round cutter, unbranded frying vessel, draining paper, wooden skewer.
 Required preparation states: activated yeast mixture; smooth risen dough; dough rolled to about 2 cm and cut into rounds; Kreppel fried at 170–180 °C and drained.
 Required finished state: deliberately plain, unfilled, and without any external sugar or glaze; approximately 15–20 pieces per batch.
-Forbidden: jam, custard, chocolate, any filling, icing, glaze, powdered sugar, granulated-sugar coating, decorative finish, fruit, dairy ingredients, and unrelated garnish.
+Forbidden: jam, custard, chocolate, any filling, icing, glaze, icing sugar, granulated-sugar coating, decorative finish, fruit, dairy ingredients, and unrelated garnish.
 ```
 
 ## Approved Editorial Decisions
 
 - The Kreppel remain deliberately unfilled and uncoated.
-- No jam, powdered sugar, granulated-sugar crust, or glaze may be implied visually.
+- No jam, icing sugar, granulated-sugar crust, or glaze may be implied visually.
 - One batch makes approximately 15–20 pieces.
 - The visual emphasis is the smooth golden fried surface, restrained simplicity, and airy yeast-dough volume.
 - The wooden-skewer bubble test is a factual process cue, not a decorative tradition symbol.
@@ -57,9 +57,9 @@ Reference map:
 [Insert the immutable RECIPE-NOTES-MIXED-MEDIA-V1 master style block here verbatim.]
 
 Asset family: hero.
-Create one compact contemporary editorial composition of five whole vegan Hessian Kreppel. They are deliberately plain, unfilled, unglazed, and completely free from powdered sugar or external sugar coating. Their yeast dough should look light and airy through the gently puffed volume, with a believable smooth and evenly golden fried surface. Arrange the five pieces in one quiet, slightly asymmetrical café-pastry cluster. Keep the pastry visually dominant and use only recipe-accurate supporting cues.
+Create one compact contemporary editorial composition of five whole vegan Hessian Kreppel. They are deliberately plain, unfilled, unglazed, and completely free from icing sugar or external sugar coating. Their yeast dough should look light and airy through the gently puffed volume, with a believable smooth and evenly golden fried surface. Arrange the five pieces in one quiet, slightly asymmetrical café-pastry cluster. Keep the pastry visually dominant and use only recipe-accurate supporting cues.
 
-Forbidden additions: cut-open filling, jam, custard, powdered sugar, granulated-sugar coating, icing, glaze, fruit, dairy ingredients, rustic bakery scenery, gingham cloth, old kitchen props, folk imagery, text, labels, people.
+Forbidden additions: cut-open filling, jam, custard, icing sugar, granulated-sugar coating, icing, glaze, fruit, dairy ingredients, rustic bakery scenery, gingham cloth, old kitchen props, folk imagery, text, labels, people.
 
 Output: one 4:3 transparent organic cutout cluster with generous responsive padding, no rectangular paper background, no baked-in typography, and only a restrained irregular watercolour grounding wash.
 ```
@@ -77,7 +77,7 @@ Output: one 4:3 transparent organic cutout cluster with generous responsive padd
 - Working key image: `tmp/imagegen/hessian-kreppel/hero-key-v1.png`
 - Final draft asset: `src/content/recipes/hessische-kreppel/assets/hero-cutout-v1.webp`
 - Processing: explicit `#ff00ff` chroma key, soft alpha matte, one-pixel edge contraction, despill, then lossless WebP encoding with exact transparent RGB preservation
-- Approval lock: five whole pastries; no filling, cut surface, powdered sugar, granulated-sugar coating, glaze, or garnish
+- Approval lock: five whole pastries; no filling, cut surface, icing sugar, granulated-sugar coating, glaze, or garnish
 
 ### Supporting asset record
 

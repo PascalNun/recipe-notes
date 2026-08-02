@@ -30,7 +30,7 @@ src/content/recipes/white-bean-cinnamon-cream/
 | `description` | string | card copy and meta description |
 | `tags` | string array | categories shown on the index |
 | `yieldText` | string, optional | localised serving or piece yield, for example `about 15–20 pieces` |
-| `timeItems` | labelled string array, optional | localised preparation, proofing, cooking, and total-time values |
+| `timeItems` | labelled string array, optional | localised preparation, rising, cooking, and total-time values |
 | `timeNote` | string, optional | visible state-based timing guidance when clock time is only approximate |
 | `heroImage` | image or `fallback` | hero asset with an explicit fallback |
 | `heroAlt` | string | meaningful image description |

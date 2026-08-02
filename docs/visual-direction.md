@@ -97,7 +97,7 @@ Composition/framing: square, both objects fully visible, simple left-to-right vi
 ```text
 Primary request: one botanical sunflower with a small scatter of sunflower seeds and one simple bowl of pale sunflower seed butter
 Scene/backdrop: transparent, with no paper tile or rectangular background
-Composition/framing: centered compact cluster with generous empty margin, suitable for use as a decorative ingredient spot
+Composition/framing: centred compact cluster with generous empty margin, suitable for use as a decorative ingredient spot
 ```
 
 ## What the User Needs to Provide

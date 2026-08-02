@@ -41,7 +41,7 @@ ingredientSections:
       - 50 g coconut oil
       - 60 g sugar
       - 200 g buckwheat flour
-      - 50 g cornstarch
+      - 50 g cornflour
       - 250 ml plant drink
       - 1/2 packet baking powder
       - 1/2 tsp cinnamon
@@ -58,7 +58,7 @@ steps:
     imageAlt: A small ceramic bowl contains a lightly gelled chia-seed and water mixture with a small spoon resting inside
   - number: 2
     title: Mix the waffle batter
-    text: Gently melt the coconut oil and leave it to cool briefly. Combine the buckwheat flour, cornstarch, sugar, baking powder and cinnamon in a large bowl. Add the plant drink, soaked chia seeds, liquid coconut oil and vinegar, then whisk to an even batter.
+    text: Gently melt the coconut oil and leave it to cool briefly. Combine the buckwheat flour, cornflour, sugar, baking powder and cinnamon in a large bowl. Add the plant drink, soaked chia seeds, liquid coconut oil and vinegar, then whisk to an even batter.
     note: Mix only as long as necessary and leave the batter to rest for about 5 minutes. It should be thick but easy to portion; if it becomes unusually firm, stir in a little additional plant drink.
     image: ./assets/step-02.webp
     imageAlt: A whisk stirs smooth, thick grey-brown buckwheat batter in a large pale bowl

@@ -73,6 +73,8 @@ Public writing should be precise, warm, and confident. Avoid heritage clichés, 
 
 Use “contemporary regional cooking” as an editorial description when useful, but do not repeatedly label every recipe as new, modern, or innovative. The treatment should demonstrate that position.
 
+English recipe versions and public documentation use British or neutral International English rather than American English. Prefer forms such as `colour`, `flavour`, `centre`, `fibre`, `yoghurt`, `cornflour`, `icing sugar`, and `baking tray`. Use metric quantities throughout. Avoid region-specific idioms when a clear international formulation is available.
+
 ## Recipe Selection Test
 
 A recipe belongs in the collection when it can answer most of these questions clearly:

@@ -15,7 +15,7 @@ Primary request: one flat, front-facing, evenly lit texture of warm natural off-
 Style/medium: realistic high-resolution scan of uncoated cotton-and-cellulose art paper.
 Materials/textures: restrained short paper fibres, microscopic speckles, soft irregular tooth, very faint uneven cream tone, tiny natural pinprick shadows within the fibres, and almost imperceptible pressure variation.
 Composition/framing: square seamless tile, uniform detail density, no focal point, all four edges tile without visible seams.
-Color palette: warm off-white around #f7f1e5 and #fffaf0 with extremely subtle oat and grey-brown fibre variation.
+Colour palette: warm off-white around #f7f1e5 and #fffaf0 with extremely subtle oat and grey-brown fibre variation.
 Lighting/mood: diffuse scan-like lighting with no directional cast shadow, vignette, or gradient.
 Constraints: texture only, seamless edges, high readability under small black recipe text.
 Avoid: text, letters, numbers, food, objects, drawings, coloured brush marks, splatters, stains, grime, parchment aging, folds, torn edges, holes, borders, watermark, strong contrast, or obvious repeating motif.
@@ -29,7 +29,7 @@ Asset type: reusable watercolor texture mask for a responsive recipe zine
 Primary request: one isolated, broad, horizontal hand-painted watercolor wash with an irregular organic silhouette, dry-brush gaps, softly feathered edges, visible cold-press paper grain within the pigment, darker pigment pooling along a few edges, and 8–12 tiny related splatter droplets close to the main wash.
 Style/medium: authentic translucent artist watercolor scanned from textured paper, refined editorial food-zine quality, tactile and imperfect rather than a digital gradient.
 Composition/framing: one low horizontal swatch centred in a square canvas, approximately 75% of canvas width and 30% of canvas height, generous clean padding on every side. The main wash must remain one coherent shape suitable for scaling behind headings, notes, and object shadows.
-Color palette: neutral warm charcoal-brown and medium grey only, with varied opacity; no green, pink, blue, yellow, or magenta inside the wash.
+Colour palette: neutral warm charcoal-brown and medium grey only, with varied opacity; no green, pink, blue, yellow, or magenta inside the wash.
 Background: perfectly flat, uniform, high-saturation #ff00ff magenta chroma-key field. No paper texture, floor plane, gradient, lighting variation, or cast shadow in the background.
 Constraints: no text, no objects, no symbols, no border, no frame, no watermark. Keep the chroma background completely separate from the watercolor pigment and preserve a crisp removable outer boundary despite the naturally feathered painted edge.
 ```

@@ -18,13 +18,13 @@ yieldText: 14 small cinnamon braids
 timeItems:
   - label: Preparation & shaping
     value: about 25–30 active minutes
-  - label: Proofing
+  - label: Rising
     value: usually about 75–110 minutes in total
   - label: Baking
     value: about 15–20 minutes
   - label: Total time
     value: approximately 2 hours
-timeNote: The proofing times are guides. The dough should first roughly double in volume, and the shaped braids should look visibly risen and more relaxed before baking.
+timeNote: The rising times are guides. The dough should first roughly double in volume, and the shaped braids should look visibly risen and more relaxed before baking.
 heroImage: ./assets/hero-cutout-v4.webp
 heroAlt: Small golden vegan cinnamon braids with visible cinnamon layers in a contemporary food-zine composition
 introNote: An uncomplicated plant-based yeast pastry with a tender crumb, a clear cinnamon note and a small graphic shape.

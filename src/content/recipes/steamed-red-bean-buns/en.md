@@ -20,7 +20,7 @@ yieldText: 8 buns
 timeItems:
   - label: Preparation
     value: about 35 minutes
-  - label: Proofing
+  - label: Rising
     value: about 90 minutes
   - label: Cooking the beans
     value: about 60–90 minutes
@@ -40,7 +40,7 @@ ingredientSections:
       - 300 g German Type 405 wheat flour or plain flour
       - 150 g lukewarm water
       - 30 g agave syrup
-      - 6 g canola oil
+      - 6 g rapeseed oil
       - 4 g dried yeast
       - 2 g salt
   - title: For the red bean paste
@@ -64,7 +64,7 @@ steps:
     imageAlt: An immersion blender turns cooked azuki beans into a smooth thick paste in a tall ceramic vessel
   - number: 3
     title: Make the yeast dough
-    text: Knead the flour, salt, dried yeast, agave syrup, lukewarm water and canola oil into a smooth, elastic dough.
+    text: Knead the flour, salt, dried yeast, agave syrup, lukewarm water and rapeseed oil into a smooth, elastic dough.
     note: Cover and leave to rise for about 60 to 90 minutes, until the dough has roughly doubled in volume.
     image: ./assets/step-03.webp
     imageAlt: A dark stand mixer kneads smooth pale yeast dough with a dough hook in a stainless steel bowl

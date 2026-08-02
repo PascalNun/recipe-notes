@@ -27,7 +27,7 @@ Create one compact editorial three-quarter composition of a clear straight-sided
 
 Required subject: layered white-bean cinnamon cream with oat crunch.
 Allowed supporting cues: espresso, lime, cinnamon, sunflower seeds.
-Forbidden additions: berries, mint, chocolate, dairy foam, flowers, powdered sugar, labels, typography, people.
+Forbidden additions: berries, mint, chocolate, dairy foam, flowers, icing sugar, labels, typography, people.
 
 Output: one 4:3 hero artwork, no text, no border or framed card, generous warm paper around the composition, safe for responsive cropping. The outer paper must be quiet enough to fade into the website's shared paper background.
 ```

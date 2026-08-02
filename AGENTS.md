@@ -12,6 +12,7 @@ The public project documentation is written in English. Recipe content exists in
 - The visual and cultural direction is contemporary regional plant-based cooking: warm, urban, open, and editorial, never folkloric or nostalgic.
 - Never invent ingredients, finishes, preparation steps, yields, times, or nutritional assumptions. Ask when a recipe fact is genuinely missing.
 - German and English versions of one recipe use the same `recipeKey` and must preserve the same facts, quantities, and decisions.
+- Write English recipe content and public documentation in British or neutral International English, not American English. Keep all recipe measurements metric.
 - Keep incomplete recipes as drafts until their content and artwork are approved.
 
 ## Visual rules

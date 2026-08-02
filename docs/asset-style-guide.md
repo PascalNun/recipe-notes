@@ -54,7 +54,7 @@ Asset type: contemporary editorial recipe-zine food artwork
 Reference policy: follow the explicit image-by-image reference map at the start of this prompt. Poster references control only the roles assigned to them; do not copy their page, typography, generated text, or exact arrangement. An approved recipe hero outranks poster references for light, palette, food realism, materials, vessels, and shadow treatment. A factual subject reference must not override the visual style.
 Style/medium: approximately 70% believable appetising food and tactile material detail, 30% refined hand-drawn mixed media; subtle black ink contours, restrained watercolour shadows, occasional paper-collage edges, light natural grain
 Lighting/mood: warm natural café daylight, soft short shadows, fresh and calm, editorial rather than commercial, handmade but not childish
-Color palette: warm paper white, oat beige, terracotta, muted warm pink, sage green, pale blue, cinnamon brown, espresso brown, and small black ink accents
+Colour palette: warm paper white, oat beige, terracotta, muted warm pink, sage green, pale blue, cinnamon brown, espresso brown, and small black ink accents
 Materials/textures: matte lightly fibrous paper, lightly speckled ceramic, clear glass, natural wood used sparingly, toasted grains and seeds, soft cream, restrained pigment variation
 Food treatment: the food is the most realistic and detailed element; preserve believable moisture, crispness, weight, translucency, and preparation state; keep it recognisable and appetising
 Regional character: express place through seasonal ingredients, restraint, and contemporary café culture; never use nostalgic rural or folk imagery
@@ -166,7 +166,7 @@ Required preparation state:
 Forbidden additions:
 ```
 
-Every visible edible element must occur in the recipe. Common image-model additions such as mint, berries, chocolate, powdered sugar, dairy foam, or decorative flowers are forbidden unless the written recipe includes them.
+Every visible edible element must occur in the recipe. Common image-model additions such as mint, berries, chocolate, icing sugar, dairy foam, or decorative flowers are forbidden unless the written recipe includes them.
 
 For the white bean cinnamon cream series, the allowed edible elements are white beans, sunflower seeds, vegan skyr or soy yoghurt, fine and jumbo rolled oats, flour, sugar, stevia, agave syrup, vanilla, cinnamon, salt, lime juice, neutral oil, optional plant milk, baking powder, and espresso. Not every allowed ingredient needs to be visible. The hero should not expose whole beans unless they are intentionally shown as a small factual ingredient cue; the finished cream itself must look smooth.
 

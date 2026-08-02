@@ -21,7 +21,7 @@ Allowed tools: plain mixing bowl, rolling pin, dough scraper or knife, baking tr
 Required preparation states: smooth risen dough; rectangular rolled dough with agave, cinnamon, and sugar; shaped small braids; lightly golden baked braids with a tender crumb.
 Required shape: each of 14 portions is divided lengthways into three strands that remain connected at the top, plaited into one small three-strand braid, then lightly pinched and tucked at the end. The filling is applied before dividing and braiding.
 Required filling quantity: approximately 2–3 tsp cinnamon for the batch, depending on intensity.
-Forbidden additions: butter, dairy milk, eggs, pearl sugar, icing, nuts, chocolate, fruit, cream cheese, powdered sugar, unrelated garnish, and unapproved glaze.
+Forbidden additions: butter, dairy milk, eggs, pearl sugar, icing, nuts, chocolate, fruit, cream cheese, icing sugar, unrelated garnish, and unapproved glaze.
 ```
 
 ## Approved Editorial Decisions
@@ -32,7 +32,7 @@ Forbidden additions: butter, dairy milk, eggs, pearl sugar, icing, nuts, chocola
 - The filling is applied across the rectangular dough before it is divided into 14 portions.
 - Every portion becomes one small, clearly legible three-strand plait; it must not resemble a cinnamon roll or spiral bun.
 - Vanilla and cardamom remain optional variations, not mandatory visible ingredients.
-- The second proof ends when the shaped braids look visibly risen and more relaxed; the stated 15–20 minutes is a guide.
+- The second rise ends when the shaped braids look visibly risen and more relaxed; the stated 15–20 minutes is a guide.
 
 ## Proposed Asset Manifest
 
@@ -77,7 +77,7 @@ Create a close contemporary editorial food scene of five elongated vegan cinnamo
 
 Approved secondary hero elements: one small tea cup and two cinnamon sticks, used only as quiet compositional support.
 
-Forbidden additions: icing, powdered sugar, pearl sugar, oat topping, nuts, chocolate, fruit, dairy ingredients, additional cups or ingredient props, cloth, old kitchen props, rustic bakery scenery, folk imagery, text, labels, people.
+Forbidden additions: icing, icing sugar, pearl sugar, oat topping, nuts, chocolate, fruit, dairy ingredients, additional cups or ingredient props, cloth, old kitchen props, rustic bakery scenery, folk imagery, text, labels, people.
 
 Output: one 4:3 transparent editorial scene cutout containing the plate, pastries, and their shared tactile shadow. Use an irregular softly feathered photographic or watercolour edge so the scene integrates with the website's separate paper background. No rectangular baked-in page and no baked-in typography.
 ```

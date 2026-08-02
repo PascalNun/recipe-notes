@@ -10,10 +10,10 @@ This record preserves the recipe-specific factual lock, exact waffle geometry, a
 
 ```text
 Required subject: thin round buckwheat waffles made from exactly five heart-shaped segments.
-Allowed edible ingredients: chia seeds, water, coconut oil, sugar, buckwheat flour, cornstarch, plant drink, baking powder, cinnamon, vinegar, and optional greasing oil.
+Allowed edible ingredients: chia seeds, water, coconut oil, sugar, buckwheat flour, cornflour, plant drink, baking powder, cinnamon, vinegar, and optional greasing oil.
 Allowed tools: small and large mixing bowls, spoon, whisk, small cup, ladle, unbranded round heart-waffle iron, and cooling rack.
 Required preparation states: gelled chia mixture; smooth thick grey-brown batter; batter portioned into a five-heart iron; warm golden- to grey-brown finished waffles.
-Forbidden additions: eggs, dairy, berries, yoghurt, cream, syrup, chocolate, powdered sugar, fruit, nut butter, and unrelated garnish.
+Forbidden additions: eggs, dairy, berries, yoghurt, cream, syrup, chocolate, icing sugar, fruit, nut butter, and unrelated garnish.
 ```
 
 ## Visual decisions

@@ -32,8 +32,8 @@ No yield has been defined for this recipe, so the website deliberately shows the
 | granulated sugar | 55 g total |
 | sunflower seed kernels | 90 g |
 | rolled oats | 97.5 g total |
-| all-purpose flour | 17.5 g |
-| canola oil | 37.5 g |
+| plain flour | 17.5 g |
+| rapeseed oil | 37.5 g |
 | ground cinnamon | 5.2 g total |
 | lime juice | 7.5 g |
 | baking powder | 2 g |
@@ -57,18 +57,18 @@ The optional plant milk and optional oil for the sunflower butter are excluded. 
 
 ## Hessian Kreppel
 
-Frying makes the result inherently less certain than a baked recipe. The displayed midpoint uses a representative yield of **18 Kreppel** and **7.5 g absorbed canola oil per piece**, or 135 g for the batch.
+Frying makes the result inherently less certain than a baked recipe. The displayed midpoint uses a representative yield of **18 Kreppel** and **7.5 g absorbed rapeseed oil per piece**, or 135 g for the batch.
 
 ### Calculation basis
 
 | Ingredient | Amount used |
 | --- | ---: |
-| all-purpose flour | 600 g |
+| plain flour | 600 g |
 | 80% fat salted margarine | 125 g |
 | granulated sugar | 70 g |
 | oat milk | 250 g |
 | active dry yeast | 7 g |
-| absorbed canola oil | 135 g |
+| absorbed rapeseed oil | 135 g |
 | added salt | 0.4 g |
 
 ### Published estimate
@@ -84,7 +84,7 @@ Frying makes the result inherently less certain than a baked recipe. The display
 | protein | 66.7 g | 3.7 g |
 | salt | 3.1 g | 0.17 g |
 
-The actual result changes with the 15–20 piece yield, margarine brand, frying temperature, proofing, surface area, draining, and oil absorption. A measured revision should weigh the frying oil before and after cooking and account for oil remaining in the vessel and on the draining paper.
+The actual result changes with the 15–20 piece yield, margarine brand, frying temperature, rising, surface area, draining, and oil absorption. A measured revision should weigh the frying oil before and after cooking and account for oil remaining in the vessel and on the draining paper.
 
 ## Small Cinnamon Braids
 
@@ -94,7 +94,7 @@ The defined yield is **14 braids**. Midpoints are used for the filling: 2.5 tsp 
 
 | Ingredient | Amount used |
 | --- | ---: |
-| all-purpose flour | 600 g |
+| plain flour | 600 g |
 | oat milk | 250 g |
 | salted 80% fat margarine | 75 g |
 | granulated sugar | 48.75 g total |
@@ -126,9 +126,9 @@ The defined yield is **8 buns**. The calculation uses the dry weight of the azuk
 
 | Ingredient | Amount used |
 | --- | ---: |
-| all-purpose wheat flour | 300 g |
+| plain wheat flour | 300 g |
 | agave syrup | 60 g total |
-| canola oil | 6 g |
+| rapeseed oil | 6 g |
 | active dry yeast | 4 g |
 | dry azuki beans | 50 g |
 | added salt | 2 g |
@@ -154,7 +154,7 @@ The defined yield is **10 flatbread rolls**. Water is nutritionally negligible, 
 
 | Ingredient | Amount used |
 | --- | ---: |
-| all-purpose wheat flour | 750 g |
+| plain wheat flour | 750 g |
 | active dry yeast | 7 g |
 | added salt | 10 g |
 
@@ -183,7 +183,7 @@ The defined calculation yield is **7 waffles**. Midpoints are used for the chia 
 | dry chia seeds | 10 g |
 | coconut oil | 50 g |
 | granulated sugar | 60 g |
-| cornstarch | 50 g |
+| cornflour | 50 g |
 | unsweetened plain soy drink | 250 g |
 | baking powder | 8 g |
 | ground cinnamon | 1.3 g |
@@ -209,9 +209,9 @@ The defined calculation yield is **7 waffles**. Midpoints are used for the chia 
 - Agave syrup: [FDC 170277](https://fdc.nal.usda.gov/food-details/170277/nutrients)
 - Sunflower seed kernels: [FDC 170562](https://fdc.nal.usda.gov/food-details/170562/nutrients)
 - Rolled oats: [FDC 173904](https://fdc.nal.usda.gov/food-details/173904/nutrients)
-- All-purpose wheat flour: [FDC 169761](https://fdc.nal.usda.gov/food-details/169761/nutrients)
+- Plain wheat flour (USDA source name: all-purpose wheat flour): [FDC 169761](https://fdc.nal.usda.gov/food-details/169761/nutrients)
 - Granulated sugar: [FDC 169655](https://fdc.nal.usda.gov/food-details/169655/nutrients)
-- Canola oil: [FDC 172336](https://fdc.nal.usda.gov/food-details/172336/nutrients)
+- Rapeseed oil (USDA source name: canola oil): [FDC 172336](https://fdc.nal.usda.gov/food-details/172336/nutrients)
 - Oat milk: [FDC 2705412](https://fdc.nal.usda.gov/food-details/2705412/nutrients)
 - Active dry yeast: [FDC 175043](https://fdc.nal.usda.gov/food-details/175043/nutrients)
 - Salted 80% fat margarine: [FDC 172346](https://fdc.nal.usda.gov/food-details/172346/nutrients)
@@ -223,7 +223,7 @@ The defined calculation yield is **7 waffles**. Midpoints are used for the chia 
 - Buckwheat flour, whole-groat: [FDC 170687](https://fdc.nal.usda.gov/food-details/170687/nutrients)
 - Dry chia seeds: [FDC 170554](https://fdc.nal.usda.gov/food-details/170554/nutrients)
 - Coconut oil: [FDC 171412](https://fdc.nal.usda.gov/food-details/171412/nutrients)
-- Cornstarch: [FDC 169698](https://fdc.nal.usda.gov/food-details/169698/nutrients)
+- Cornflour (USDA source name: cornstarch): [FDC 169698](https://fdc.nal.usda.gov/food-details/169698/nutrients)
 - Unsweetened plain soy milk: [FDC 1750337](https://fdc.nal.usda.gov/food-details/1750337/nutrients)
 - Cider vinegar: [FDC 173469](https://fdc.nal.usda.gov/food-details/173469/nutrients)
 

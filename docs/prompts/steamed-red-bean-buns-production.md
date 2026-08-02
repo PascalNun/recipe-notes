@@ -10,10 +10,10 @@ This record preserves the recipe-specific factual lock, the approved visual deci
 
 ```text
 Required subject: eight soft plant-based steamed yeast buns filled with a mild homemade azuki bean paste.
-Allowed edible ingredients: German Type 405 wheat flour or plain flour, water, agave syrup, canola oil, dried yeast, salt, and dried azuki beans.
+Allowed edible ingredients: German Type 405 wheat flour or plain flour, water, agave syrup, rapeseed oil, dried yeast, salt, and dried azuki beans.
 Allowed tools: saucepan, lid, immersion blender, narrow mixing vessel, mixing bowl or stand mixer with dough hook, bamboo steamer, wide wok or shallow steaming pot, baking-paper squares.
 Required preparation states: soaked beans cooked until crushable; smooth thick cooled paste; smooth elastic risen dough; flat wrapper with a thicker centre; paste centred on the wrapper; gathered and sealed crown; smooth seam-side-down bun on baking paper; soft steamed buns.
-Forbidden additions: sesame, scallions, flowers, berries, jam, powdered sugar, glaze, icing, sauce, garnish, tea, chopsticks, dairy, eggs, unrelated ingredients, and branded appliance marks.
+Forbidden additions: sesame, spring onions, flowers, berries, jam, icing sugar, glaze, icing, sauce, garnish, tea, chopsticks, dairy, eggs, unrelated ingredients, and branded appliance marks.
 ```
 
 ## Visual decisions

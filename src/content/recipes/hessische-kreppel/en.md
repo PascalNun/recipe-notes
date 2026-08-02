@@ -25,7 +25,7 @@ timeItems:
     value: about 2–3 minutes per side
   - label: Total time
     value: approximately 2 hours
-timeNote: The proofing time is a guide. Leave the covered dough to rise until it has roughly doubled in volume. Room and dough temperature may make this faster or slower.
+timeNote: The rising time is a guide. Leave the covered dough to rise until it has roughly doubled in volume. Room and dough temperature may make this faster or slower.
 heroImage: ./assets/hero-cutout-v1.webp
 heroAlt: Golden fried vegan Kreppel with an airy crumb in a contemporary food-zine composition
 introNote: A plant-based interpretation of Hessian Kreppel – regionally rooted, made by hand and presented in a contemporary way.

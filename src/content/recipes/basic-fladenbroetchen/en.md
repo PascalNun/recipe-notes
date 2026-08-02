@@ -18,15 +18,15 @@ yieldText: 10 flatbread rolls
 timeItems:
   - label: Active preparation
     value: about 20 minutes
-  - label: First proof
+  - label: First rise
     value: about 90 minutes
-  - label: Second proof
+  - label: Second rise
     value: about 30 minutes
   - label: Baking
     value: about 20–25 minutes
   - label: Total time
     value: about 2 hours 45 minutes
-timeNote: The proofing times are guidelines. What matters is that the dough roughly doubles during the first proof and that the shaped rounds visibly rise again before baking.
+timeNote: The rising times are guidelines. What matters is that the dough roughly doubles during the first rise and that the shaped rounds visibly rise again before baking.
 heroImage: ./assets/hero-cutout.webp
 heroAlt: Several flat, lightly golden flatbread rolls on a cooling rack and one opened roll showing its soft airy crumb
 introNote: A few ingredients, a soft dough and sufficient resting time make a versatile roll for filling, topping or serving as a side.
@@ -60,7 +60,7 @@ steps:
     image: ./assets/step-02.webp
     imageAlt: Soft risen yeast dough is divided into ten portions on a floured surface; several are already round and flat
   - number: 3
-    title: Proof again
+    title: Leave to rise again
     text: Cover the ten shaped rounds and leave them to rest for another 30 minutes, until visibly risen. Meanwhile, preheat the oven to 200 °C fan.
     image: ./assets/step-03.webp
     imageAlt: Ten soft unbaked flatbread rolls sit apart on baking paper beneath a loosely lifted cloth
@@ -112,7 +112,7 @@ nutrition:
   note: Flour type, yeast brand and actual piece size will change the values.
 tips:
   - Lightly flour your hands and work surface for shaping instead of working a large amount of extra flour into the dough.
-  - The first proof is complete when the volume has roughly doubled.
+  - The first rise is complete when the volume has roughly doubled.
   - Spices can be mixed directly into the flour.
   - Turmeric works well for mild seasoning and a warm yellow colour.
   - Let the rolls cool completely before freezing them.
